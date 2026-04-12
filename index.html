@@ -7,913 +7,30 @@
   <title>WeCode Studio — Innovación Tecnológica a tu Alcance</title>
   <meta name="description"
     content="WeCode Studio — Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
+  <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#07060e" />
+  <link rel="canonical" href="https://wecodestudio.com/" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CR" />
   <meta property="og:title" content="WeCode Studio — Innovación Tecnológica a tu Alcance" />
   <meta property="og:description"
     content="Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
-  <meta property="og:url" content="https://wecodestudio.com" />
+  <meta property="og:url" content="https://wecodestudio.com/" />
+  <meta property="og:image" content="https://wecodestudio.com/logo.png" />
+  <meta property="og:image:alt" content="Logo de WeCode Studio" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="WeCode Studio — Innovación Tecnológica a tu Alcance" />
   <meta name="twitter:description"
     content="Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
+  <meta name="twitter:image" content="https://wecodestudio.com/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
     rel="stylesheet" />
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0
-    }
-
-    :root {
-      --bg: #07060e;
-      --bg2: #0c0b18;
-      --surface: #111023;
-      --border: #1a1730;
-      --p: #7c3aed;
-      --pl: #9d5ff0;
-      --v: #a855f7;
-      --ac: #d946ef;
-      --y: #facc15;
-      --w: #f0eeff;
-      --m: #8b89a8;
-      --card: #0d0c1e;
-      --fh: 'Syne', sans-serif;
-      --fb: 'DM Sans', sans-serif;
-      --r: 14px;
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--w);
-      font-family: var(--fb);
-      font-size: 16px;
-      line-height: 1.65;
-      overflow-x: hidden
-    }
-
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9998
-    }
-
-    /* NAV */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 200;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 5vw;
-      background: rgba(7, 6, 14, .82);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border)
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      text-decoration: none
-    }
-
-    .logo-img {
-      height: 38px;
-      width: auto;
-      flex-shrink: 0;
-      filter: drop-shadow(0 0 8px rgba(124, 58, 237, .4))
-    }
-
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1
-    }
-
-    .logo-name {
-      font-family: var(--fh);
-      font-weight: 800;
-      font-size: .95rem;
-      color: var(--w);
-      letter-spacing: -.3px
-    }
-
-    .logo-sub {
-      font-family: var(--fb);
-      font-weight: 700;
-      font-size: .68rem;
-      color: var(--v);
-      letter-spacing: .08em;
-      text-transform: uppercase
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--m);
-      font-size: .88rem;
-      font-weight: 500;
-      transition: color .2s
-    }
-
-    .nav-links a:hover {
-      color: var(--w)
-    }
-
-    .nav-r {
-      display: flex;
-      align-items: center;
-      gap: .75rem
-    }
-
-    .lang {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--m);
-      padding: .3rem .75rem;
-      border-radius: 6px;
-      font-size: .78rem;
-      cursor: pointer;
-      font-family: var(--fb);
-      transition: all .2s
-    }
-
-    .lang:hover {
-      color: var(--w);
-      border-color: var(--p)
-    }
-
-    .btn-cta {
-      background: linear-gradient(135deg, var(--p), var(--ac));
-      color: #fff;
-      text-decoration: none;
-      padding: .48rem 1.1rem;
-      border-radius: 8px;
-      font-size: .84rem;
-      font-weight: 700;
-      transition: opacity .2s, transform .2s
-    }
-
-    .btn-cta:hover {
-      opacity: .88;
-      transform: translateY(-1px)
-    }
-
-    @media(max-width:720px) {
-      .nav-links {
-        display: none
-      }
-    }
-
-    /* HERO */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 9rem 5vw 5rem;
-      position: relative;
-      overflow: hidden
-    }
-
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(90px);
-      pointer-events: none
-    }
-
-    .o1 {
-      width: 550px;
-      height: 550px;
-      background: rgba(124, 58, 237, .22);
-      top: -140px;
-      left: -180px;
-      animation: fl 9s ease-in-out infinite
-    }
-
-    .o2 {
-      width: 420px;
-      height: 420px;
-      background: rgba(217, 70, 239, .16);
-      top: 80px;
-      right: -120px;
-      animation: fl 7s ease-in-out infinite reverse
-    }
-
-    .o3 {
-      width: 320px;
-      height: 320px;
-      background: rgba(168, 85, 247, .12);
-      bottom: 50px;
-      left: 35%;
-      animation: fl 11s ease-in-out infinite
-    }
-
-    @keyframes fl {
-
-      0%,
-      100% {
-        transform: translateY(0)
-      }
-
-      50% {
-        transform: translateY(-28px)
-      }
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: rgba(124, 58, 237, .14);
-      border: 1px solid rgba(124, 58, 237, .38);
-      color: var(--v);
-      padding: .38rem 1rem;
-      border-radius: 50px;
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      margin-bottom: 1.4rem;
-      animation: fu .6s ease both
-    }
-
-    .dot {
-      width: 6px;
-      height: 6px;
-      background: var(--v);
-      border-radius: 50%;
-      flex-shrink: 0
-    }
-
-    h1 {
-      font-family: var(--fh);
-      font-weight: 800;
-      font-size: clamp(2.6rem, 6vw, 5.2rem);
-      line-height: 1.04;
-      letter-spacing: -2px;
-      margin-bottom: 1.4rem;
-      animation: fu .7s ease .1s both
-    }
-
-    .grad {
-      background: linear-gradient(135deg, var(--pl), var(--ac) 55%, var(--y));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text
-    }
-
-    .hero-sub {
-      font-size: clamp(.95rem, 2vw, 1.15rem);
-      color: var(--m);
-      max-width: 560px;
-      margin: 0 auto 2.5rem;
-      font-weight: 300;
-      animation: fu .7s ease .2s both
-    }
-
-    .ctas {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      animation: fu .7s ease .3s both
-    }
-
-    .btn-p {
-      background: linear-gradient(135deg, var(--p), var(--ac));
-      color: #fff;
-      text-decoration: none;
-      padding: .88rem 2rem;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: .98rem;
-      box-shadow: 0 0 32px rgba(124, 58, 237, .38);
-      transition: transform .2s, box-shadow .2s
-    }
-
-    .btn-p:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 52px rgba(124, 58, 237, .6)
-    }
-
-    .btn-g {
-      background: transparent;
-      color: var(--w);
-      text-decoration: none;
-      padding: .88rem 2rem;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: .98rem;
-      border: 1px solid var(--border);
-      transition: border-color .2s, background .2s
-    }
-
-    .btn-g:hover {
-      border-color: var(--p);
-      background: rgba(124, 58, 237, .08)
-    }
-
-    .stats {
-      display: flex;
-      gap: 3rem;
-      margin-top: 4rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      animation: fu .7s ease .5s both
-    }
-
-    .sn {
-      font-family: var(--fh);
-      font-size: 2.1rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--pl), var(--ac));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text
-    }
-
-    .sl {
-      font-size: .82rem;
-      color: var(--m);
-      margin-top: .15rem
-    }
-
-    @keyframes fu {
-      from {
-        opacity: 0;
-        transform: translateY(22px)
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0)
-      }
-    }
-
-    /* CLIENTS */
-    #clients {
-      padding: 3rem 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
-      background: var(--bg2)
-    }
-
-    .cl-lbl {
-      text-align: center;
-      font-size: .75rem;
-      text-transform: uppercase;
-      letter-spacing: .15em;
-      color: var(--m);
-      margin-bottom: 2rem
-    }
-
-    .track-wrap {
-      overflow: hidden;
-      mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent)
-    }
-
-    .track {
-      display: flex;
-      gap: 2.5rem;
-      align-items: center;
-      width: max-content;
-      animation: sc 35s linear infinite
-    }
-
-    .track:hover {
-      animation-play-state: paused
-    }
-
-    @keyframes sc {
-      0% {
-        transform: translateX(0)
-      }
-
-      100% {
-        transform: translateX(-50%)
-      }
-    }
-
-    .cl {
-      display: flex;
-      align-items: center;
-      gap: .7rem;
-      white-space: nowrap;
-      opacity: .5;
-      transition: opacity .3s;
-      font-family: var(--fh);
-      font-weight: 700;
-      font-size: .95rem;
-      color: var(--w);
-      padding: .5rem 1.2rem;
-      border: 1px solid transparent;
-      border-radius: 8px
-    }
-
-    .cl:hover {
-      opacity: 1;
-      border-color: var(--border)
-    }
-
-    .ci {
-      width: 34px;
-      height: 34px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .72rem;
-      font-weight: 800;
-      color: #fff;
-      flex-shrink: 0
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 6.5rem 5vw
-    }
-
-    .stag {
-      font-size: .75rem;
-      text-transform: uppercase;
-      letter-spacing: .15em;
-      color: var(--v);
-      font-weight: 700;
-      margin-bottom: .9rem
-    }
-
-    .sh {
-      font-family: var(--fh);
-      font-size: clamp(1.9rem, 4vw, 3rem);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      margin-bottom: .9rem
-    }
-
-    .ssub {
-      color: var(--m);
-      max-width: 510px;
-      margin-bottom: 3.5rem;
-      font-weight: 300;
-      font-size: .95rem
-    }
-
-    /* SERVICES */
-    #services {
-      background: var(--bg)
-    }
-
-    .sg {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 1.2rem
-    }
-
-    .sc {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      padding: 1.8rem;
-      transition: border-color .3s, transform .3s;
-      position: relative;
-      overflow: hidden
-    }
-
-    .sc::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--p), var(--ac));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .35s
-    }
-
-    .sc:hover {
-      border-color: rgba(124, 58, 237, .4);
-      transform: translateY(-4px)
-    }
-
-    .sc:hover::before {
-      transform: scaleX(1)
-    }
-
-    .si {
-      width: 46px;
-      height: 46px;
-      border-radius: 11px;
-      background: rgba(124, 58, 237, .14);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      margin-bottom: 1.1rem
-    }
-
-    .sc h3 {
-      font-family: var(--fh);
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: .5rem
-    }
-
-    .sc p {
-      color: var(--m);
-      font-size: .87rem;
-      line-height: 1.7
-    }
-
-    /* PROJECTS */
-    #projects {
-      background: var(--bg2)
-    }
-
-    .pg {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-      gap: 1.4rem
-    }
-
-    .pc {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      overflow: hidden;
-      transition: transform .3s, border-color .3s;
-      display: flex;
-      flex-direction: column
-    }
-
-    .pc:hover {
-      transform: translateY(-5px);
-      border-color: rgba(124, 58, 237, .45)
-    }
-
-    .pt {
-      height: 190px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: .8rem;
-      position: relative;
-      overflow: hidden
-    }
-
-    .pe {
-      font-size: 3.2rem;
-      line-height: 1;
-      position: relative;
-      z-index: 1
-    }
-
-    .ps {
-      font-family: var(--fh);
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      opacity: .65;
-      position: relative;
-      z-index: 1
-    }
-
-    .pb {
-      padding: 1.4rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column
-    }
-
-    .ptags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .45rem;
-      margin-bottom: .9rem
-    }
-
-    .tag {
-      background: rgba(124, 58, 237, .14);
-      border: 1px solid rgba(124, 58, 237, .28);
-      color: var(--v);
-      padding: .22rem .6rem;
-      border-radius: 50px;
-      font-size: .7rem;
-      font-weight: 600
-    }
-
-    .pb h3 {
-      font-family: var(--fh);
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: .45rem
-    }
-
-    .pb p {
-      color: var(--m);
-      font-size: .86rem;
-      line-height: 1.65;
-      flex: 1
-    }
-
-    .plinks {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1.1rem
-    }
-
-    .plinks a {
-      font-size: .83rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: var(--v);
-      transition: color .2s
-    }
-
-    .plinks a:hover {
-      color: var(--ac)
-    }
-
-    .real-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .35rem;
-      background: rgba(250, 204, 21, .1);
-      border: 1px solid rgba(250, 204, 21, .3);
-      color: var(--y);
-      padding: .2rem .6rem;
-      border-radius: 50px;
-      font-size: .68rem;
-      font-weight: 700;
-      margin-bottom: .7rem
-    }
-
-    .project-note {
-      margin-top: .85rem;
-      color: var(--m);
-      font-size: .8rem;
-      line-height: 1.6
-    }
-
-    .project-note strong {
-      color: var(--w);
-      font-weight: 700
-    }
-
-    /* PROCESS */
-    #process {
-      background: var(--bg)
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 0;
-      margin-top: 3.5rem;
-      position: relative
-    }
-
-    .steps::before {
-      content: '';
-      position: absolute;
-      top: 27px;
-      left: 12%;
-      right: 12%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--p), var(--ac), transparent);
-      pointer-events: none
-    }
-
-    .step {
-      text-align: center;
-      padding: 1.2rem .8rem
-    }
-
-    .stepn {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--p), var(--ac));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--fh);
-      font-weight: 800;
-      font-size: 1rem;
-      margin: 0 auto 1.1rem;
-      position: relative;
-      z-index: 1;
-      box-shadow: 0 0 24px rgba(124, 58, 237, .4)
-    }
-
-    .step h4 {
-      font-family: var(--fh);
-      font-weight: 700;
-      margin-bottom: .4rem;
-      font-size: .98rem
-    }
-
-    .step p {
-      color: var(--m);
-      font-size: .84rem;
-      line-height: 1.6
-    }
-
-    @media(max-width:680px) {
-      .steps::before {
-        display: none
-      }
-    }
-
-    /* TESTIMONIALS */
-    #testimonials {
-      background: var(--bg2)
-    }
-
-    .tg {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 1.2rem;
-      margin-top: 3.5rem
-    }
-
-    .tc {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      padding: 1.8rem
-    }
-
-    .tstars {
-      color: var(--y);
-      font-size: .95rem;
-      letter-spacing: 2px;
-      margin-bottom: .9rem
-    }
-
-    .ttext {
-      color: var(--w);
-      font-size: .92rem;
-      line-height: 1.78;
-      font-style: italic;
-      margin-bottom: 1.4rem
-    }
-
-    .tauthor {
-      display: flex;
-      align-items: center;
-      gap: .75rem
-    }
-
-    .tav {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--p), var(--ac));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--fh);
-      font-weight: 800;
-      font-size: .85rem;
-      flex-shrink: 0
-    }
-
-    .tname {
-      font-family: var(--fh);
-      font-weight: 700;
-      font-size: .92rem
-    }
-
-    .trole {
-      color: var(--m);
-      font-size: .78rem;
-      margin-top: .1rem
-    }
-
-    /* CTA */
-    #cta {
-      text-align: center;
-      background: var(--bg);
-      position: relative;
-      overflow: hidden
-    }
-
-    #cta::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 60%, rgba(124, 58, 237, .18), transparent 68%);
-      pointer-events: none
-    }
-
-    #cta h2 {
-      font-family: var(--fh);
-      font-size: clamp(1.9rem, 5vw, 3.8rem);
-      font-weight: 800;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 1.1rem;
-      position: relative
-    }
-
-    #cta .ctasub {
-      color: var(--m);
-      max-width: 480px;
-      margin: 0 auto 2.4rem;
-      font-weight: 300;
-      position: relative
-    }
-
-    .ctawrap {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      position: relative
-    }
-
-    /* FOOTER */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2rem 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-      background: var(--bg)
-    }
-
-    .fbrand {
-      font-family: var(--fh);
-      font-weight: 700;
-      font-size: .92rem
-    }
-
-    .fcopy {
-      color: var(--m);
-      font-size: .8rem
-    }
-
-    .flinks {
-      display: flex;
-      gap: 1.4rem
-    }
-
-    .flinks a {
-      color: var(--m);
-      text-decoration: none;
-      font-size: .82rem;
-      transition: color .2s
-    }
-
-    .flinks a:hover {
-      color: var(--w)
-    }
-
-    /* REVEAL */
-    .rv {
-      opacity: 0;
-      transform: translateY(26px);
-      transition: opacity .65s ease, transform .65s ease
-    }
-
-    .rv.on {
-      opacity: 1;
-      transform: none
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
@@ -970,58 +87,58 @@
     </div>
   </section>
 
-  <section id="clients" style="padding:3rem 0">
+  <section id="clients">
     <p class="cl-lbl" data-k="cl.lbl">Empresas que han confiado en nosotros</p>
     <div class="track-wrap">
       <div class="track">
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#2e7d32,#1b5e20)">🌱</div>Agrícola KC
+          <div class="ci ci-agricola">🌱</div>Agrícola KC
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#ad1457,#880e4f)">FM</div>Farmasi CR
+          <div class="ci ci-farmasi">FM</div>Farmasi CR
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#1565c0,#0d47a1)">GF</div>GymFlow
+          <div class="ci ci-gymflow">GF</div>GymFlow
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#283593,#1a237e)">PH</div>PeopleHub
+          <div class="ci ci-peoplehub">PH</div>PeopleHub
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#e65100,#bf360c)">NX</div>NexoCorp
+          <div class="ci ci-nexocorp">NX</div>NexoCorp
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#6a1b9a,#4a148c)">VR</div>ViraRed
+          <div class="ci ci-virared">VR</div>ViraRed
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#00695c,#004d40)">SB</div>SwiftBuild
+          <div class="ci ci-swiftbuild">SB</div>SwiftBuild
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#b71c1c,#7f0000)">AT</div>AltoTech
+          <div class="ci ci-altotech">AT</div>AltoTech
         </div>
         <!-- duplicate -->
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#2e7d32,#1b5e20)">🌱</div>Agrícola KC
+          <div class="ci ci-agricola">🌱</div>Agrícola KC
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#ad1457,#880e4f)">FM</div>Farmasi CR
+          <div class="ci ci-farmasi">FM</div>Farmasi CR
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#1565c0,#0d47a1)">GF</div>GymFlow
+          <div class="ci ci-gymflow">GF</div>GymFlow
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#283593,#1a237e)">PH</div>PeopleHub
+          <div class="ci ci-peoplehub">PH</div>PeopleHub
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#e65100,#bf360c)">NX</div>NexoCorp
+          <div class="ci ci-nexocorp">NX</div>NexoCorp
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#6a1b9a,#4a148c)">VR</div>ViraRed
+          <div class="ci ci-virared">VR</div>ViraRed
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#00695c,#004d40)">SB</div>SwiftBuild
+          <div class="ci ci-swiftbuild">SB</div>SwiftBuild
         </div>
         <div class="cl">
-          <div class="ci" style="background:linear-gradient(135deg,#b71c1c,#7f0000)">AT</div>AltoTech
+          <div class="ci ci-altotech">AT</div>AltoTech
         </div>
       </div>
     </div>
@@ -1105,7 +222,7 @@
     <div class="pg">
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#0a1f0a,#1a4a1a)">
+        <div class="pt pt-agricola">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" />
@@ -1121,12 +238,13 @@
           <h3 data-k="p1.h">Agrícola KC — Presencia Digital</h3>
           <p data-k="p1.p">Sitio web completo para empresa agrícola costarricense. Catálogo de productos, información
             institucional y formulario de contacto. Diseño que genera confianza con compradores y distribuidores.</p>
-          <div class="plinks"><a href="https://github.com/aumana-dev/agricola-kc" target="_blank">GitHub →</a></div>
+          <div class="plinks"><a href="https://github.com/aumana-dev/agricola-kc" target="_blank"
+              rel="noopener noreferrer">GitHub →</a></div>
         </div>
       </div>
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#0d0624,#2a0f5e)">
+        <div class="pt pt-nexocorp">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -1144,15 +262,15 @@
           <h3 data-k="p2.h">NexoCorp — CRM de Ventas</h3>
           <p data-k="p2.p">CRM completo para equipo de 40+ vendedores: pipeline visual de deals, gestión de leads,
             alertas automáticas y reportes de conversión en tiempo real.</p>
-          <p class="project-note" data-k="p2.n">Disponible online: el código fuente ya está publicado en GitHub. El demo completo se desplegará cuando quede lista la infraestructura del backend.</p>
           <div class="plinks">
-            <a href="https://github.com/aumana-dev/crm-nexocorp" target="_blank" rel="noreferrer">Ver repositorio →</a>
+            <a href="https://nexocorp-crm.onrender.com" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+            <a href="https://github.com/aumana-dev/crm-nexocorp" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
           </div>
         </div>
       </div>
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#0a1520,#0d3055)">
+        <div class="pt pt-gymflow">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
@@ -1170,14 +288,16 @@
           <p data-k="p3.p">Plataforma para gestión de membresías, asistencia, programación de clases y analíticas de
             ocupación en tiempo real para cadena de gimnasios.</p>
           <div class="plinks">
-            <a href="https://gymflow-management.netlify.app" target="_blank" data-k="demo">Ver Demo →</a>
-            <a href="https://github.com/aumana-dev/gym-management" target="_blank">GitHub →</a>
+            <a href="https://gymflow-management.netlify.app" target="_blank" rel="noopener noreferrer" data-k="demo">Ver
+              Demo →</a>
+            <a href="https://github.com/aumana-dev/gym-management" target="_blank" rel="noopener noreferrer">GitHub
+              →</a>
           </div>
         </div>
       </div>
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#070728,#15155a)">
+        <div class="pt pt-peoplehub">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -1194,14 +314,15 @@
           <p data-k="p4.p">Plataforma de RRHH con directorio de empleados, gestión de permisos, organización
             departamental y flujos de aprobación configurables.</p>
           <div class="plinks">
-            <a href="https://uiahr-management.netlify.app" target="_blank" data-k="demo">Ver Demo →</a>
-            <a href="https://github.com/aumana-dev/hr-management" target="_blank">GitHub →</a>
+            <a href="https://uiahr-management.netlify.app" target="_blank" rel="noopener noreferrer" data-k="demo">Ver
+              Demo →</a>
+            <a href="https://github.com/aumana-dev/hr-management" target="_blank" rel="noopener noreferrer">GitHub →</a>
           </div>
         </div>
       </div>
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#200a18,#5c1a3a)">
+        <div class="pt pt-farmasi">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <line x1="8" y1="6" x2="21" y2="6" />
@@ -1220,14 +341,16 @@
           <p data-k="p5.p">Dashboard de inventario para red de distribuidores de productos de belleza. Stock en tiempo
             real, alertas automáticas, filtros avanzados. Bilingüe ES/EN.</p>
           <div class="plinks">
-            <a href="https://inventory-farmasi.netlify.app" target="_blank" data-k="demo">Ver Demo →</a>
-            <a href="https://github.com/aumana-dev/inventory-farmasi" target="_blank">GitHub →</a>
+            <a href="https://inventory-farmasi.netlify.app" target="_blank" rel="noopener noreferrer" data-k="demo">Ver
+              Demo →</a>
+            <a href="https://github.com/aumana-dev/inventory-farmasi" target="_blank" rel="noopener noreferrer">GitHub
+              →</a>
           </div>
         </div>
       </div>
 
       <div class="pc rv">
-        <div class="pt" style="background:linear-gradient(135deg,#1a1000,#3d2600)">
+        <div class="pt pt-swiftbuild">
           <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
               width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
@@ -1241,7 +364,8 @@
           <h3 data-k="p6.h">SwiftBuild — Crecimiento Orgánico</h3>
           <p data-k="p6.p">Rediseño web + estrategia SEO para empresa de construcción. Resultado: +320% en tráfico
             orgánico y posición #1 en búsquedas clave en 4 meses.</p>
-          <div class="plinks"><a href="https://aumana-dev.github.io/portfolio/" target="_blank" data-k="demo">Ver Demo
+          <div class="plinks"><a href="https://aumana-dev.github.io/portfolio/" target="_blank"
+              rel="noopener noreferrer" data-k="demo">Ver Demo
               →</a></div>
         </div>
       </div>
@@ -1326,7 +450,8 @@
     </p>
     <div class="ctawrap">
       <a href="mailto:info@wecodestudio.com" class="btn-p rv" data-k="cta.b1">Escribinos ahora</a>
-      <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" data-k="cta.b2">WhatsApp →</a>
+      <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer"
+        data-k="cta.b2">WhatsApp →</a>
     </div>
   </section>
 
@@ -1335,105 +460,11 @@
     <div class="fcopy" data-k="ft.c">© 2026 WeCode Studio. Costa Rica.</div>
     <div class="flinks">
       <a href="mailto:info@wecodestudio.com">info@wecodestudio.com</a>
-      <a href="https://wecode.studio" target="_blank">wecode.studio</a>
+      <a href="https://wecodestudio.com/" target="_blank" rel="noopener noreferrer">wecodestudio.com</a>
     </div>
   </footer>
 
-  <script>
-    const T = {
-      es: {
-        "nav.srv": "Servicios", "nav.proj": "Proyectos", "nav.proc": "Proceso", "nav.test": "Clientes", "nav.cta": "Hablemos →",
-        "h.badge": "Innovación Tecnológica a tu Alcance", "h.l1": "Transformamos ideas", "h.l2": "software real",
-        "h.sub": "Diseñamos y desarrollamos plataformas digitales que hacen crecer tu negocio — desde sitios web hasta CRMs empresariales completamente a medida.",
-        "h.c1": "Empezar mi proyecto", "h.c2": "Ver portafolio",
-        "h.s1": "Proyectos entregados", "h.s2": "Clientes satisfechos", "h.s3": "Años de experiencia", "h.s4": "Costa Rica & LATAM",
-        "cl.lbl": "Empresas que han confiado en nosotros",
-        "srv.tag": "Lo que hacemos", "srv.h": "Soluciones digitales que generan resultados", "srv.sub": "Cada proyecto es construido desde cero, a medida de tu negocio. Sin plantillas. Sin atajos.",
-        "s1.h": "Diseño & Desarrollo Web", "s1.p": "Sitios web modernos, rápidos y optimizados para SEO. Diseño a medida que refleja tu marca y convierte visitantes en clientes reales.",
-        "s2.h": "CRM & Software Empresarial", "s2.p": "Sistemas de gestión personalizados: seguimiento de clientes, pipelines de ventas, reportes en tiempo real y automatización de procesos para tu equipo.",
-        "s3.h": "E-commerce", "s3.p": "Tiendas en línea completas con gestión de inventario, pasarelas de pago integradas y panel de administración intuitivo.",
-        "s4.h": "Apps Móviles", "s4.p": "Aplicaciones nativas y multiplataforma para iOS y Android. Conecta con tus clientes donde sea que estén.",
-        "s5.h": "SEO & Posicionamiento", "s5.p": "Estrategias de optimización para motores de búsqueda que llevan tu negocio a la primera página de Google.",
-        "s6.h": "Automatización & APIs", "s6.p": "Integraciones entre sistemas, automatización de flujos de trabajo y APIs REST para conectar y potenciar todas tus herramientas.",
-        "pr.tag": "Portafolio", "pr.h": "Casos de éxito que hablan por sí solos", "pr.sub": "Trabajo real, para clientes reales, con resultados medibles.",
-        "p1.h": "Agrícola KC — Presencia Digital", "p1.p": "Sitio web completo para empresa agrícola costarricense. Catálogo de productos, información institucional y formulario de contacto.",
-        "p2.h": "NexoCorp — CRM de Ventas", "p2.p": "CRM completo para equipo de 40+ vendedores: pipeline visual de deals, gestión de leads, alertas automáticas y reportes en tiempo real.", "p2.n": "Disponible online: el código fuente ya está publicado en GitHub. El demo completo se desplegará cuando quede lista la infraestructura del backend.",
-        "p3.h": "GymFlow — Gestión de Gimnasios", "p3.p": "Plataforma para gestión de membresías, asistencia, programación de clases y analíticas de ocupación en tiempo real.",
-        "p4.h": "PeopleHub — Recursos Humanos", "p4.p": "Plataforma de RRHH con directorio de empleados, gestión de permisos, organización departamental y flujos de aprobación.",
-        "p5.h": "Farmasi — Inventario Inteligente", "p5.p": "Dashboard de inventario para distribuidores de productos de belleza. Stock en tiempo real, alertas automáticas, bilingüe ES/EN.",
-        "p6.h": "SwiftBuild — Crecimiento Orgánico", "p6.p": "Rediseño web + estrategia SEO. Resultado: +320% tráfico orgánico y posición #1 en búsquedas clave en 4 meses.",
-        "demo": "Ver Demo →",
-        "pc.tag": "Cómo trabajamos", "pc.h": "Un proceso claro, resultados predecibles", "pc.sub": "Sin sorpresas. Sabés exactamente qué pasa en cada etapa de tu proyecto.",
-        "st1.h": "Descubrimiento", "st1.p": "Entendemos tu negocio, tus metas y tu audiencia antes de escribir una línea de código.",
-        "st2.h": "Diseño & Prototipo", "st2.p": "Creamos mockups y flujos de usuario para validar la experiencia antes de desarrollar.",
-        "st3.h": "Desarrollo", "st3.p": "Construimos con tecnología moderna, código limpio y actualizaciones semanales de progreso.",
-        "st4.h": "Lanzamiento & Soporte", "st4.p": "Deploy, capacitación del equipo y soporte continuo post-lanzamiento incluido.",
-        "ts.tag": "Testimonios", "ts.h": "Lo que dicen nuestros clientes",
-        "t1": '"WeCode entendió exactamente lo que necesitábamos. El CRM transformó la forma en que gestionamos nuestro equipo de ventas. Recuperamos la inversión en el primer mes."',
-        "t1r": "Director Comercial — NexoCorp",
-        "t2": '"El sistema que desarrollaron es exactamente lo que necesitábamos: intuitivo, rápido y nuestro equipo lo adoptó desde el primer día."',
-        "t2r": "CEO — GymFlow Costa Rica",
-        "t3": '"Profesionalismo de primer nivel con atención personalizada. El dashboard de inventario ahorra horas de trabajo manual cada semana."',
-        "t3r": "Operations Manager — Farmasi CR",
-        "cta.h": "¿Listo para construir algo extraordinario?", "cta.sub": "Contanos tu idea. En 24 horas tenés una propuesta concreta, sin compromiso.",
-        "cta.b1": "Escribinos ahora", "cta.b2": "WhatsApp →",
-        "ft.c": "© 2026 WeCode Studio. Costa Rica."
-      },
-      en: {
-        "nav.srv": "Services", "nav.proj": "Projects", "nav.proc": "Process", "nav.test": "Clients", "nav.cta": "Let's Talk →",
-        "h.badge": "Technology Innovation Within Reach", "h.l1": "We turn ideas into", "h.l2": "real software",
-        "h.sub": "We design and develop digital platforms that grow your business — from websites to fully custom enterprise CRMs.",
-        "h.c1": "Start my project", "h.c2": "View portfolio",
-        "h.s1": "Projects delivered", "h.s2": "Happy clients", "h.s3": "Years of experience", "h.s4": "Costa Rica & LATAM",
-        "cl.lbl": "Companies that have trusted us",
-        "srv.tag": "What we do", "srv.h": "Digital solutions that drive results", "srv.sub": "Every project is built from scratch, tailored to your business. No templates. No shortcuts.",
-        "s1.h": "Web Design & Development", "s1.p": "Modern, fast, SEO-optimized websites. Custom design that reflects your brand and converts visitors into real customers.",
-        "s2.h": "CRM & Business Software", "s2.p": "Custom management systems: client tracking, sales pipelines, real-time reports and process automation for your team.",
-        "s3.h": "E-commerce", "s3.p": "Full online stores with inventory management, integrated payment gateways and intuitive admin panel.",
-        "s4.h": "Mobile Apps", "s4.p": "Native and cross-platform apps for iOS and Android. Connect with your clients wherever they are.",
-        "s5.h": "SEO & Search Positioning", "s5.p": "Search engine optimization strategies that put your business on Google's first page.",
-        "s6.h": "Automation & APIs", "s6.p": "System integrations, workflow automation and REST APIs to connect and power all your tools.",
-        "pr.tag": "Portfolio", "pr.h": "Success stories that speak for themselves", "pr.sub": "Real work, for real clients, with measurable results.",
-        "p1.h": "Agrícola KC — Digital Presence", "p1.p": "Full website for a Costa Rican agricultural company. Product catalogue, institutional info and contact form.",
-        "p2.h": "NexoCorp — Sales CRM", "p2.p": "Full CRM for 40+ sales team: visual deal pipeline, lead management, automated alerts and real-time reports.", "p2.n": "Available online: the source code is already published on GitHub. The full demo will be deployed once the backend infrastructure is ready.",
-        "p3.h": "GymFlow — Gym Management", "p3.p": "Platform for membership management, attendance, class scheduling and real-time occupancy analytics.",
-        "p4.h": "PeopleHub — HR Management", "p4.p": "HR platform with employee directory, leave management, department organization and approval workflows.",
-        "p5.h": "Farmasi — Smart Inventory", "p5.p": "Inventory dashboard for beauty product distributor network. Real-time stock, automatic alerts, bilingual ES/EN.",
-        "p6.h": "SwiftBuild — Organic Growth", "p6.p": "Web redesign + SEO strategy. Result: +320% organic traffic and #1 ranking for key searches in 4 months.",
-        "demo": "View Demo →",
-        "pc.tag": "How we work", "pc.h": "A clear process, predictable results", "pc.sub": "No surprises. You know exactly what happens at every stage of your project.",
-        "st1.h": "Discovery", "st1.p": "We understand your business, goals and audience before writing a single line of code.",
-        "st2.h": "Design & Prototype", "st2.p": "We create mockups and user flows to validate the experience before development.",
-        "st3.h": "Development", "st3.p": "We build with modern tech, clean code and weekly progress updates.",
-        "st4.h": "Launch & Support", "st4.p": "Deploy, team training and ongoing post-launch support included.",
-        "ts.tag": "Testimonials", "ts.h": "What our clients say",
-        "t1": '"WeCode understood exactly what we needed. The CRM transformed how we manage our sales team. We recovered the investment in the first month."',
-        "t1r": "Commercial Director — NexoCorp",
-        "t2": '"The system they built is exactly what we needed: intuitive, fast, and our team adopted it from day one."',
-        "t2r": "CEO — GymFlow Costa Rica",
-        "t3": '"Enterprise-level professionalism with personalized attention. The inventory dashboard saves hours of manual work every week."',
-        "t3r": "Operations Manager — Farmasi CR",
-        "cta.h": "Ready to build something extraordinary?", "cta.sub": "Tell us your idea. In 24 hours you'll have a concrete proposal, no commitment.",
-        "cta.b1": "Write us now", "cta.b2": "WhatsApp →",
-        "ft.c": "© 2026 WeCode Studio. Costa Rica."
-      }
-    };
-
-    let lang = 'es';
-    function apply(l) {
-      lang = l;
-      document.getElementById('lb').textContent = l === 'es' ? 'EN' : 'ES';
-      document.querySelectorAll('[data-k]').forEach(el => {
-        const v = T[l][el.getAttribute('data-k')];
-        if (v !== undefined) el.textContent = v;
-      });
-      document.title = l === 'es' ? 'WeCode Studio — Innovación Tecnológica a tu Alcance' : 'WeCode Studio — Technology Innovation Within Reach';
-    }
-    document.getElementById('lb').addEventListener('click', () => apply(lang === 'es' ? 'en' : 'es'));
-
-    const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) x.target.classList.add('on') }) }, { threshold: 0.08 });
-    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
