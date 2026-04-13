@@ -475,7 +475,7 @@
         <div class="tauthor">
           <div class="tav">AP</div>
           <div>
-            <div class="tname">Andrea Pérez</div>
+            <div class="tname">Andrea Aragón</div>
             <div class="trole" data-k="t3r">Operations Manager — Farmasi CR</div>
           </div>
         </div>
@@ -487,9 +487,10 @@
     <h2 class="rv" data-k="cta.h">¿Listo para construir<br>algo extraordinario?</h2>
     <p class="ctasub rv" data-k="cta.sub">Contanos tu idea. En 24 horas tenés una propuesta concreta, sin compromiso.
     </p>
-    <form name="contact" method="POST" netlify data-netlify="true" action="/gracias" class="ctaform rv">
-      <input type="hidden" name="form-name" value="contact" />
-      <p style="display:none"><label>No llenar: <input name="bot-field" /></label></p>
+    <form name="contact" method="POST" action="https://formspree.io/f/REEMPLAZAR_CON_TU_ID" class="ctaform rv">
+      <input type="hidden" name="_next" value="https://wecodestudio.com/gracias" />
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde wecodestudio.com" />
+      <input type="text" name="_gotcha" style="display:none" />
       <div class="cf-grid">
         <div class="cf-group">
           <label for="cf-nombre">Nombre *</label>
