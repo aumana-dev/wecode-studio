@@ -129,4 +129,45 @@ document.querySelectorAll('.rv').forEach((element) => {
   revealObserver.observe(element);
 });
 
+const contactForm = document.querySelector('form[name="contact"]');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = currentLanguage === 'es' ? 'Enviando...' : 'Sending...';
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      const nextInput = contactForm.querySelector('input[name="_next"]');
+      const nextUrl = nextInput ? nextInput.value : '/gracias';
+      contactForm.reset();
+      window.location.href = nextUrl;
+    } catch (error) {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = currentLanguage === 'es' ? 'Enviar mensaje →' : 'Send message →';
+      }
+
+      alert(currentLanguage === 'es'
+        ? 'No se pudo enviar el formulario. Intentá de nuevo en unos minutos.'
+        : 'The form could not be sent. Please try again in a few minutes.');
+    }
+  });
+}
+
 applyLanguage(currentLanguage);
