@@ -934,6 +934,90 @@ footer {
   color: var(--w)
 }
 
+/* CONTACT FORM */
+.ctaform {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+  position: relative;
+  z-index: 1
+}
+
+.cf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .85rem;
+  margin-bottom: .85rem
+}
+
+.cf-group {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem
+}
+
+.cf-full {
+  margin-bottom: .85rem
+}
+
+.cf-group label {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--m);
+  letter-spacing: .04em
+}
+
+.cf-group input,
+.cf-group select,
+.cf-group textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--w);
+  font-family: var(--fb);
+  font-size: .9rem;
+  padding: .7rem 1rem;
+  transition: border-color .2s;
+  width: 100%
+}
+
+.cf-group input:focus,
+.cf-group select:focus,
+.cf-group textarea:focus {
+  outline: none;
+  border-color: var(--p);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, .15)
+}
+
+.cf-group input::placeholder,
+.cf-group textarea::placeholder {
+  color: var(--m);
+  opacity: .55
+}
+
+.cf-group select option {
+  background: var(--surface)
+}
+
+.cf-group textarea {
+  resize: vertical;
+  min-height: 110px
+}
+
+.cf-submit {
+  display: block;
+  margin: 1.5rem auto 0;
+  border: none;
+  cursor: pointer;
+  font-family: var(--fb)
+}
+
+@media(max-width: 560px) {
+  .cf-grid {
+    grid-template-columns: 1fr
+  }
+}
+
 /* REVEAL */
 .rv {
   opacity: 0;

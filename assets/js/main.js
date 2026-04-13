@@ -106,8 +106,8 @@ function applyLanguage(language) {
   });
 
   document.title = language === 'es'
-    ? 'WeCode Studio — Innovación Tecnológica a tu Alcance'
-    : 'WeCode Studio — Technology Innovation Within Reach';
+    ? 'We Code Studio — Innovación Tecnológica a tu Alcance'
+    : 'We Code Studio — Technology Innovation Within Reach';
 }
 
 const languageButton = document.getElementById('lb');

@@ -1,0 +1,24 @@
+{
+  "name": "We Code Studio",
+  "short_name": "WeCode",
+  "description": "Diseño web, desarrollo a medida, CRM y software empresarial para Costa Rica y LATAM.",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#07060e",
+  "background_color": "#07060e",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "es"
+}

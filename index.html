@@ -4,33 +4,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeCode Studio — Innovación Tecnológica a tu Alcance</title>
+  <title>We Code Studio — Innovación Tecnológica a tu Alcance</title>
   <meta name="description"
-    content="WeCode Studio — Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
+    content="We Code Studio — Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#07060e" />
   <link rel="canonical" href="https://wecodestudio.com/" />
-  <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_CR" />
-  <meta property="og:title" content="WeCode Studio — Innovación Tecnológica a tu Alcance" />
+  <meta property="og:title" content="We Code Studio — Innovación Tecnológica a tu Alcance" />
   <meta property="og:description"
-    content="Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
+    content="We Code Studio — Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
   <meta property="og:url" content="https://wecodestudio.com/" />
-  <meta property="og:image" content="https://wecodestudio.com/logo.png" />
-  <meta property="og:image:alt" content="Logo de WeCode Studio" />
+  <meta property="og:image" content="https://wecodestudio.com/logo-dark.png" />
+  <meta property="og:image:alt" content="Logo de We Code Studio" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1080" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WeCode Studio — Innovación Tecnológica a tu Alcance" />
+  <meta name="twitter:title" content="We Code Studio — Innovación Tecnológica a tu Alcance" />
   <meta name="twitter:description"
-    content="Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
-  <meta name="twitter:image" content="https://wecodestudio.com/logo.png" />
+    content="We Code Studio — Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica." />
+  <meta name="twitter:image" content="https://wecodestudio.com/logo-dark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "We Code Studio",
+    "alternateName": ["WeCode Studio", "WeCode", "We Code"],
+    "url": "https://wecodestudio.com/",
+    "logo": "https://wecodestudio.com/logo-dark.png",
+    "description": "Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "info@wecodestudio.com"
+    },
+    "sameAs": [
+      "https://github.com/aumana-dev"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "We Code Studio",
+    "url": "https://wecodestudio.com/",
+    "description": "Diseño web, desarrollo a medida, CRM, e-commerce y software empresarial para Costa Rica y Latinoamérica.",
+    "inLanguage": "es"
+  }
+  </script>
 </head>
 
 <body>
@@ -264,7 +302,8 @@
             alertas automáticas y reportes de conversión en tiempo real.</p>
           <div class="plinks">
             <a href="https://nexocorp-crm.onrender.com" target="_blank" rel="noopener noreferrer">Ver demo →</a>
-            <a href="https://github.com/aumana-dev/crm-nexocorp" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+            <a href="https://github.com/aumana-dev/crm-nexocorp" target="_blank" rel="noopener noreferrer">Ver
+              repositorio →</a>
           </div>
         </div>
       </div>
@@ -448,6 +487,41 @@
     <h2 class="rv" data-k="cta.h">¿Listo para construir<br>algo extraordinario?</h2>
     <p class="ctasub rv" data-k="cta.sub">Contanos tu idea. En 24 horas tenés una propuesta concreta, sin compromiso.
     </p>
+    <form name="contact" method="POST" netlify data-netlify="true" action="/gracias" class="ctaform rv">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none"><label>No llenar: <input name="bot-field" /></label></p>
+      <div class="cf-grid">
+        <div class="cf-group">
+          <label for="cf-nombre">Nombre *</label>
+          <input type="text" name="nombre" id="cf-nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="cf-group">
+          <label for="cf-email">Correo electrónico *</label>
+          <input type="email" name="email" id="cf-email" placeholder="tu@email.com" required />
+        </div>
+        <div class="cf-group">
+          <label for="cf-servicio">Servicio de interés</label>
+          <select name="servicio" id="cf-servicio">
+            <option value="">Seleccionar...</option>
+            <option value="web">Diseño &amp; Desarrollo Web</option>
+            <option value="crm">CRM &amp; Software Empresarial</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="mobile">Apps Móviles</option>
+            <option value="seo">SEO &amp; Posicionamiento</option>
+            <option value="apis">Automatización &amp; APIs</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-tel">WhatsApp / Teléfono</label>
+          <input type="tel" name="tel" id="cf-tel" placeholder="+506 0000-0000" />
+        </div>
+      </div>
+      <div class="cf-group cf-full">
+        <label for="cf-mensaje">Contanos tu proyecto *</label>
+        <textarea name="mensaje" id="cf-mensaje" rows="4" placeholder="¿Qué necesitás construir?" required></textarea>
+      </div>
+      <button type="submit" class="btn-p cf-submit">Enviar mensaje →</button>
+    </form>
     <div class="ctawrap">
       <a href="mailto:info@wecodestudio.com" class="btn-p rv" data-k="cta.b1">Escribinos ahora</a>
       <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer"
@@ -456,7 +530,7 @@
   </section>
 
   <footer>
-    <div class="fbrand">WeCode Studio</div>
+    <div class="fbrand">We Code Studio</div>
     <div class="fcopy" data-k="ft.c">© 2026 WeCode Studio. Costa Rica.</div>
     <div class="flinks">
       <a href="mailto:info@wecodestudio.com">info@wecodestudio.com</a>

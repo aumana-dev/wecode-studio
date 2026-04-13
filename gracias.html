@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Mensaje recibido! | We Code Studio</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#07060e" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>
+    #gracias {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 5vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gr-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--p), var(--ac));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      box-shadow: 0 0 48px rgba(124, 58, 237, .45);
+      animation: fu .5s ease both;
+    }
+
+    .gr-icon svg {
+      stroke: #fff;
+    }
+
+    .gr-title {
+      font-family: var(--fh);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      animation: fu .6s ease .1s both;
+    }
+
+    .gr-sub {
+      color: var(--m);
+      max-width: 460px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+      font-size: .97rem;
+      line-height: 1.7;
+      animation: fu .6s ease .2s both;
+    }
+
+    .gr-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fu .6s ease .3s both;
+    }
+
+    .gr-detail {
+      margin-top: 3rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 1.4rem 2rem;
+      max-width: 460px;
+      width: 100%;
+      text-align: left;
+      animation: fu .6s ease .4s both;
+    }
+
+    .gr-detail p {
+      font-size: .85rem;
+      color: var(--m);
+      line-height: 1.7;
+    }
+
+    .gr-detail strong {
+      color: var(--w);
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="/" class="logo">
+      <img src="/logo.png" alt="WeCode" class="logo-img" />
+      <div class="logo-text">
+        <span class="logo-name">We Code</span>
+        <span class="logo-sub">Software Studio</span>
+      </div>
+    </a>
+  </nav>
+
+  <section id="gracias">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+
+    <div class="gr-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" width="36" height="36" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+
+    <h1 class="gr-title">¡Mensaje recibido!</h1>
+    <p class="gr-sub">Gracias por escribirnos. Revisamos tu mensaje y te respondemos en menos de <strong
+        style="color:var(--w)">24 horas</strong> con una propuesta concreta.</p>
+
+    <div class="gr-links">
+      <a href="/" class="btn-p">Volver al inicio</a>
+      <a href="https://wa.me/50661042840" class="btn-g" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+    </div>
+
+    <div class="gr-detail">
+      <p>¿Necesitás respuesta urgente? Escribinos directamente a<br>
+        <strong>info@wecodestudio.com</strong> o por WhatsApp al <strong>+506 6104-2840</strong>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fbrand">We Code Studio</div>
+    <div class="fcopy">© 2026 WeCode Studio. Costa Rica.</div>
+    <div class="flinks">
+      <a href="mailto:info@wecodestudio.com">info@wecodestudio.com</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

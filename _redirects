@@ -1,2 +1,4 @@
 # Redirect www to apex
 https://www.wecodestudio.com/* https://wecodestudio.com/:splat 301
+https://wecode.studio/* https://wecodestudio.com/:splat 301
+https://www.wecode.studio/* https://wecodestudio.com/:splat 301
