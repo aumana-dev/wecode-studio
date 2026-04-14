@@ -10,9 +10,6 @@
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#07060e" />
   <link rel="canonical" href="https://wecodestudio.com/" />
-  <link rel="alternate" hreflang="es" href="https://wecodestudio.com/" />
-  <link rel="alternate" hreflang="en" href="https://wecodestudio.com/en.html" />
-  <link rel="alternate" hreflang="x-default" href="https://wecodestudio.com/" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -56,7 +53,9 @@
       "contactType": "customer service",
       "email": "info@wecodestudio.com"
     },
-    "sameAs": []
+    "sameAs": [
+      "https://github.com/aumana-dev"
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -107,7 +106,7 @@
     </div>
     <div class="stats">
       <div>
-        <div class="sn">25+</div>
+        <div class="sn">12+</div>
         <div class="sl">Proyectos entregados</div>
       </div>
       <div>
@@ -115,7 +114,7 @@
         <div class="sl">Clientes satisfechos</div>
       </div>
       <div>
-        <div class="sn">10+</div>
+        <div class="sn">3+</div>
         <div class="sl">Años de experiencia</div>
       </div>
       <div>
@@ -130,10 +129,10 @@
     <div class="track-wrap">
       <div class="track">
         <div class="cl">
-          <div class="ci ci-agricola">🌱</div>CampoVerde
+          <div class="ci ci-agricola">🌱</div>Agrícola KC
         </div>
         <div class="cl">
-          <div class="ci ci-farmasi">FM</div>BellaVida
+          <div class="ci ci-farmasi">FM</div>Farmasi CR
         </div>
         <div class="cl">
           <div class="ci ci-gymflow">GF</div>GymFlow
@@ -153,12 +152,12 @@
         <div class="cl">
           <div class="ci ci-altotech">AT</div>AltoTech
         </div>
-        <!-- duplicate for seamless scroll -->
+        <!-- duplicate -->
         <div class="cl">
-          <div class="ci ci-agricola">🌱</div>CampoVerde
+          <div class="ci ci-agricola">🌱</div>Agrícola KC
         </div>
         <div class="cl">
-          <div class="ci ci-farmasi">FM</div>BellaVida
+          <div class="ci ci-farmasi">FM</div>Farmasi CR
         </div>
         <div class="cl">
           <div class="ci ci-gymflow">GF</div>GymFlow
@@ -186,6 +185,7 @@
     <p class="stag">Lo que hacemos</p>
     <h2 class="sh">Soluciones digitales que generan resultados</h2>
     <p class="ssub">Cada proyecto es construido desde cero, a medida de tu negocio. Sin plantillas. Sin atajos.</p>
+    atajos.</p>
     <div class="sg">
       <div class="sc rv">
         <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
@@ -216,39 +216,39 @@
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
           </svg></div>
         <h3>E-commerce</h3>
-        <p>Tiendas en línea completas con gestión de inventario, pasarelas de pago integradas y panel de administración
-          intuitivo.</p>
-      </div>
-      <div class="sc rv">
-        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
-            height="22" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="5" y="2" width="14" height="20" rx="2" />
-            <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5" />
-          </svg></div>
-        <h3>Apps Móviles</h3>
-        <p>Aplicaciones nativas y multiplataforma para iOS y Android. Conecta con tus clientes donde sea que estén.</p>
-      </div>
-      <div class="sc rv">
-        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
-            height="22" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-          </svg></div>
-        <h3>SEO & Posicionamiento</h3>
-        <p>Estrategias de optimización para motores de búsqueda que llevan tu negocio a la primera página de Google y
-          generan tráfico cualificado.</p>
-      </div>
-      <div class="sc rv">
-        <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
-            height="22" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3" />
-            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14" />
-            <path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07" />
-          </svg></div>
-        <h3>Automatización & APIs</h3>
-        <p>Integraciones entre sistemas, automatización de flujos de trabajo y APIs REST para conectar y potenciar todas
-          tus herramientas.</p>
-      </div>
-    </div>
+        <p>E-commerce</h3>
+        <p>Tiendas en línea completas con gestión de inventario, pasarelas de pago integradas y panel deiv>
+        <div class="sc rv">
+          <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+              height="22" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5" />
+            </svg></div>
+          <h3>Apps Móviles</h3>
+          <p>Apps Móviles</h3>
+          <p>Aplicaciones nativas y multiplataforma para iOS y Android. Conecta con tus clientes donde seaiv>
+          <div class="sc rv">
+            <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                height="22" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg></div>
+            <h3 data-k="s5.h">SEO & Posicionamiento</h3>
+            <p data-k="s5.p">Estrategias de optimización para motores de búsqueda que llevan tu negocio a la primera
+              página
+              d>SEO & Posicionamiento</h3>
+            <p>Estrategias de optimización para motores de búsqueda que llevan tu negocio a la primera páginav class="sc
+              rv">
+            <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                height="22" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14" />
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07" />
+              </svg></div>
+            <h3 data-k="s6.h">Automatización & APIs</h3>
+            <p data-k="s6.p">Integraciones entre sistemas, automatización de flujos de trabajo y APIs REST para conectar
+              y
+              p>Automatización & APIs</h3>
+            <p>Integraciones entre sistemas, automatización de flujos de trabajo y APIs REST para conectar y>
   </section>
 
   <section id="projects">
@@ -268,13 +268,14 @@
           <div class="ps">Landing Page · Agro</div>
         </div>
         <div class="pb">
+          <div class="real-badge">✓ Cliente real</div>
           <div class="ptags"><span class="tag">HTML</span><span class="tag">CSS</span><span
               class="tag">JavaScript</span></div>
-          <h3>CampoVerde — Presencia Digital</h3>
+          <h3>Agrícola KC — Presencia Digital</h3>
           <p>Sitio web completo para empresa agrícola costarricense. Catálogo de productos, información institucional y
             formulario de contacto. Diseño que genera confianza con compradores y distribuidores.</p>
-          <div class="plinks"><a href="https://aumana-dev.github.io/agricola-kc/" target="_blank"
-              rel="noopener noreferrer">Ver Demo →</a></div>
+          <div class="plinks"><a href="https://github.com/aumana-dev/agricola-kc" target="_blank"
+              rel="noopener noreferrer">GitHub →</a></div>
         </div>
       </div>
 
@@ -291,13 +292,16 @@
           <div class="ps">CRM · Sales Pipeline</div>
         </div>
         <div class="pb">
+          <div class="real-badge">✓ Código publicado</div>
           <div class="ptags"><span class="tag">React</span><span class="tag">Node.js</span><span
               class="tag">PostgreSQL</span></div>
           <h3>NexoCorp — CRM de Ventas</h3>
           <p>CRM completo para equipo de 40+ vendedores: pipeline visual de deals, gestión de leads, alertas automáticas
             y reportes de conversión en tiempo real.</p>
           <div class="plinks">
-            <a href="https://nexocorp-crm.onrender.com" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
+            <a href="https://nexocorp-crm.onrender.com" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+            <a href="https://github.com/aumana-dev/crm-nexocorp" target="_blank" rel="noopener noreferrer">Ver
+              repositorio →</a>
           </div>
         </div>
       </div>
@@ -318,80 +322,89 @@
           <div class="ptags"><span class="tag">React</span><span class="tag">Express</span><span
               class="tag">Prisma</span></div>
           <h3>GymFlow — Gestión de Gimnasios</h3>
-          <p>Sistema integral de gestión para gimnasios. Control de membresías, registro de asistencia, programación de
-            clases y dashboard con métricas de ocupación en tiempo real.</p>
-          <div class="plinks">
+          <p>GymFlow — Gestión de Gimnasios</h3>
+          <p>Plataforma para gestión de membresías, asistencia, programación de clases y analíticas dediv
+            class="plinks">
             <a href="https://gymflow-management.netlify.app" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
-          </div>
+            <a href="https://github.com/aumana-dev/gym-management" target="_blank" rel="noopener noreferrer">GitHub
+              →</a>
         </div>
       </div>
+    </div>
 
-      <div class="pc rv">
-        <div class="pt pt-peoplehub">
-          <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
-              width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg></div>
-          <div class="ps">HR Platform · Enterprise</div>
-        </div>
-        <div class="pb">
-          <div class="ptags"><span class="tag">React</span><span class="tag">Node.js</span><span
-              class="tag">Prisma</span></div>
-          <h3>PeopleHub — Recursos Humanos</h3>
-          <p>Sistema completo de gestión de talento humano. Directorio de colaboradores, control de vacaciones y
-            permisos, estructura departamental y flujos de aprobación automatizados.</p>
-          <div class="plinks">
-            <a href="https://uiahr-management.netlify.app" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
-          </div>
-        </div>
+    <div class="pc rv">
+      <div class="pt pt-peoplehub">
+        <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
+            width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg></div>
+        <div class="ps">HR Platform · Enterprise</div>
       </div>
+      <div class="pb">
+        <div class="ptags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Prisma</span>
+        </div>
+        <h3 data-k="p4.h">PeopleHub — Recursos Humanos</h3>
+        <h3>PeopleHub — Recursos Humanos</h3>de empleados, gestión de permisos, organización
+        d>PeopleHub — Recursos Humanos</h3>
+        <p>Plataforma de RRHH con directorio de empleados, gestión de permisos, organización <a
+            href="https://uiahr-management.netlify.app" target="_blank" rel="noopener noreferrer" data-k="demo">Ver
+            Demo →</a>
+          <a href="https://github.com/aumana-dev/hr-management" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+    </div>
 
-      <div class="pc rv">
-        <div class="pt pt-farmasi">
-          <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
-              width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="8" y1="6" x2="21" y2="6" />
-              <line x1="8" y1="12" x2="21" y2="12" />
-              <line x1="8" y1="18" x2="21" y2="18" />
-              <line x1="3" y1="6" x2="3.01" y2="6" stroke-width="2" />
-              <line x1="3" y1="12" x2="3.01" y2="12" stroke-width="2" />
-              <line x1="3" y1="18" x2="3.01" y2="18" stroke-width="2" />
-            </svg></div>
-          <div class="ps">Inventory Dashboard · Beauty</div>
-        </div>
-        <div class="pb">
-          <div class="ptags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">i18n</span>
-          </div>
-          <h3>BellaVida — Inventario Inteligente</h3>
-          <p>Dashboard inteligente de control de inventario para red de distribuidores de belleza. Monitoreo de stock en
-            tiempo real, alertas de reabastecimiento y reportes de movimiento, con soporte bilingüe ES/EN.</p>
-          <div class="plinks">
-            <a href="https://inventory-farmasi.netlify.app" target="_blank" rel="noopener noreferrer">Ver Demo →</a>
-          </div>
-        </div>
+    <div class="pc rv">
+      <div class="pt pt-farmasi">
+        <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
+            width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6" />
+            <line x1="8" y1="12" x2="21" y2="12" />
+            <line x1="8" y1="18" x2="21" y2="18" />
+            <line x1="3" y1="6" x2="3.01" y2="6" stroke-width="2" />
+            <line x1="3" y1="12" x2="3.01" y2="12" stroke-width="2" />
+            <line x1="3" y1="18" x2="3.01" y2="18" stroke-width="2" />
+          </svg></div>
+        <div class="ps">Inventory Dashboard · Beauty</div>
       </div>
+      <div class="pb">
+        <div class="ptags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">i18n</span>
+        </div>
+        <h3>Farmasi — Inventario Inteligente</h3>
+        <p data-k="p5.p">Dashboard de inventario para red de distribuidores de productos de belleza. Stock en tiempo
+          r>Farmasi — Inventario Inteligente</h3>
+        <p>Dashboard de inventario para red de distribuidores de productos de belleza. Stock en tiempo <a
+            href="https://inventory-farmasi.netlify.app" target="_blank" rel="noopener noreferrer" data-k="demo">Ver
+            Demo →</a>
+          <a href="https://github.com/aumana-dev/inventory-farmasi" target="_blank" rel="noopener noreferrer">GitHub
+            →</a>
+      </div>
+    </div>
+    </div>
 
-      <div class="pc rv">
-        <div class="pt pt-swiftbuild">
-          <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
-              width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-              <polyline points="16 7 22 7 22 13" />
-            </svg></div>
-          <div class="ps">Web Redesign · SEO Growth</div>
-        </div>
-        <div class="pb">
-          <div class="ptags"><span class="tag">SEO</span><span class="tag">Web</span><span class="tag">Analytics</span>
-          </div>
-          <h3>SwiftBuild — Crecimiento Orgánico</h3>
-          <p>Rediseño web + estrategia SEO para empresa de construcción. Resultado: +320% en tráfico orgánico y posición
-            #1 en búsquedas clave en 4 meses.</p>
-          <div class="plinks"></div>
-        </div>
+    <div class="pc rv">
+      <div class="pt pt-swiftbuild">
+        <div class="pe"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"
+            width="52" height="52" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+            <polyline points="16 7 22 7 22 13" />
+          </svg></div>
+        <div class="ps">Web Redesign · SEO Growth</div>
       </div>
+      <div class="pb">
+        <div class="ptags"><span class="tag">SEO</span><span class="tag">Web</span><span class="tag">Analytics</span>
+        </div>
+        <h3>SwiftBuild — Crecimiento Orgánico</h3>
+        <p>Rediseño web + estrategia SEO para empresa de construcción. Resultado: +320% en tráfico orgánico y posición
+          #1 en búsquedas clave en 4 meses.</p>
+        <di>SwiftBuild — Crecimiento Orgánico</h3>
+          <p>Rediseño web + estrategia SEO para empresa de construcción. Resultado: +320% en tráfico →</a>
+      </div>
+    </div>
+    </div>
 
     </div>
   </section>
@@ -454,76 +467,79 @@
       </div>
       <div class="tc rv">
         <div class="tstars">★★★★★</div>
-        <p class="ttext">"Profesionalismo de primer nivel con atención personalizada. El dashboard de inventario ahorra
+        <p class="ttext" data-k="t3">"Profesionalismo de primer nivel con atención personalizada. El dashboard de
+          inventario aho>"Profesionalismo de primer nivel con atención personalizada. El dashboard de inventario ahorra
           horas de trabajo manual cada semana."</p>
         <div class="tauthor">
           <div class="tav">AP</div>
           <div>
             <div class="tname">Andrea Aragón</div>
-            <div class="trole">Operations Manager — BellaVida</div>
-          </div>
+            <div class="trole
         </div>
       </div>
     </div>
   </section>
 
-  <section id="cta">
-    <h2 class="rv">¿Listo para construir<br>algo extraordinario?</h2>
-    <p class="ctasub rv">Contanos tu idea. En 24 horas tenés una propuesta concreta, sin compromiso.</p>
-    <form name="contact" method="POST" action="https://formspree.io/f/xzdypnrp" class="ctaform rv"
-      accept-charset="UTF-8">
-      <input type="hidden" name="_next" value="https://wecodestudio.com/gracias" />
-      <input type="hidden" name="_subject" value="Nuevo mensaje desde wecodestudio.com" />
-      <input type="text" name="_gotcha" style="display:none" />
-      <div class="cf-grid">
-        <div class="cf-group">
-          <label for="cf-nombre">Nombre *</label>
-          <input type="text" name="nombre" id="cf-nombre" placeholder="Tu nombre" required />
-        </div>
-        <div class="cf-group">
-          <label for="cf-email">Correo electrónico *</label>
-          <input type="email" name="email" id="cf-email" placeholder="tu@email.com" required />
-        </div>
-        <div class="cf-group">
-          <label for="cf-servicio">Servicio de interés</label>
-          <select name="servicio" id="cf-servicio">
-            <option value="">Seleccionar...</option>
-            <option value="web">Diseño &amp; Desarrollo Web</option>
-            <option value="crm">CRM &amp; Software Empresarial</option>
-            <option value="ecommerce">E-commerce</option>
-            <option value="mobile">Apps Móviles</option>
-            <option value="seo">SEO &amp; Posicionamiento</option>
-            <option value="apis">Automatización &amp; APIs</option>
-          </select>
-        </div>
-        <div class="cf-group">
-          <label for="cf-tel">WhatsApp / Teléfono</label>
-          <input type="tel" name="tel" id="cf-tel" placeholder="+506 0000-0000" />
-        </div>
-      </div>
-      <div class="cf-group cf-full">
-        <label for="cf-mensaje">Contanos tu proyecto *</label>
-        <textarea name="mensaje" id="cf-mensaje" rows="4" placeholder="¿Qué necesitás construir?"
-          required></textarea>
-      </div>
-      <button type="submit" class="btn-p cf-submit">Enviar mensaje →</button>
-    </form>
-    <div class="ctawrap">
-      <a href="mailto:info@wecodestudio.com" class="btn-p rv">Escribinos ahora</a>
-      <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
-    </div>
-  </section>
+  <section id=" cta">
+              <h2 class="rv" data-k="cta.h">¿Listo para construir<br>algo extraordinario?</h2>
+              <p class="ctasub rv" data-k="cta.sub">Contanos tu idea. En 24 horas tenés una propuesta concreta, sin
+                compromiso.
+              </p>>¿Listo para construir<br>algo extraordinario?</h2>
+              <p class="ctasub rv">Contanos tu idea. En 24 horas tenés una propuesta concreta, sin compromiso.
+                accept-charset="UTF-8">
+                <input type="hidden" name="_next" value="https://wecodestudio.com/gracias" />
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde wecodestudio.com" />
+                <input type="text" name="_gotcha" style="display:none" />
+              <div class="cf-grid">
+                <div class="cf-group">
+                  <label for="cf-nombre">Nombre *</label>
+                  <input type="text" name="nombre" id="cf-nombre" placeholder="Tu nombre" required />
+                </div>
+                <div class="cf-group">
+                  <label for="cf-email">Correo electrónico *</label>
+                  <input type="email" name="email" id="cf-email" placeholder="tu@email.com" required />
+                </div>
+                <div class="cf-group">
+                  <label for="cf-servicio">Servicio de interés</label>
+                  <select name="servicio" id="cf-servicio">
+                    <option value="">Seleccionar...</option>
+                    <option value="web">Diseño &amp; Desarrollo Web</option>
+                    <option value="crm">CRM &amp; Software Empresarial</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="mobile">Apps Móviles</option>
+                    <option value="seo">SEO &amp; Posicionamiento</option>
+                    <option value="apis">Automatización &amp; APIs</option>
+                  </select>
+                </div>
+                <div class="cf-group">
+                  <label for="cf-tel">WhatsApp / Teléfono</label>
+                  <input type="tel" name="tel" id="cf-tel" placeholder="+506 0000-0000" />
+                </div>
+              </div>
+              <div class="cf-group cf-full">
+                <label for="cf-mensaje">Contanos tu proyecto *</label>
+                <textarea name="mensaje" id="cf-mensaje" rows="4" placeholder="¿Qué necesitás construir?"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn-p cf-submit">Enviar mensaje →</button>
+              </form>
+              <div class="ctawrap">
+                <a href="mailto:info@wecodestudio.com" class="btn-p rv" data-k="cta.b1">Escribinos ahora</a>
+                <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer"
+                  data-k="cta.b2">WhatsApp →</a>>Escribinos ahora</a>
+                <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer
 
   <footer>
-    <div class="fbrand">We Code Studio</div>
-    <div class="fcopy">© 2026 WeCode Studio. Costa Rica.</div>
-    <div class="flinks">
-      <a href="mailto:info@wecodestudio.com">info@wecodestudio.com</a>
-      <a href="https://wecodestudio.com/" target="_blank" rel="noopener noreferrer">wecodestudio.com</a>
-    </div>
-  </footer>
+    <div class=" fbrand">We Code Studio
+              </div>
+              <div class="fcopy" data-k="ft.c">© 2026 WeCode Studio. Costa Rica.</div>
+              <div class="flinks">
+                <a href="mailto:info@wecodestudio.com">info@wecodestudio.com</a>
+                <a href="https:/com/" target="_blank" rel="noopener noreferrer">wecodestudio.com</a>
+              </div>
+              </footer>
 
-  <script src="assets/js/main.js"></script>
+              <script src="assets/js/main.js"></script>
 </body>
 
 </html>
