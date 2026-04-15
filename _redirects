@@ -14,3 +14,10 @@ https://www.wecode.studio/* https://wecodestudio.com/:splat 301
 /privacidad.html /privacidad 301
 /terminos.html /terminos 301
 /gracias.html /gracias 301
+
+# Legacy image paths
+/logo.png /assets/images/logo.png 301
+/logo-dark.png /assets/images/logo-dark.png 301
+/logo-light.png /assets/images/logo-light.png 301
+/web-app-manifest-192x192.png /assets/images/web-app-manifest-192x192.png 301
+/web-app-manifest-512x512.png /assets/images/web-app-manifest-512x512.png 301
