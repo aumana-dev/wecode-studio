@@ -9,12 +9,12 @@ if (languageButton) {
     '/index.html': '/en',
     '/en': '/',
     '/en.html': '/',
-    '/servicios': '/services',
-    '/services': '/servicios',
-    '/portafolio': '/portfolio',
-    '/portfolio': '/portafolio',
-    '/contacto': '/contact',
-    '/contact': '/contacto'
+    '/servicios': '/en/services',
+    '/en/services': '/servicios',
+    '/portafolio': '/en/portfolio',
+    '/en/portfolio': '/portafolio',
+    '/contacto': '/en/contact',
+    '/en/contact': '/contacto'
   };
   languageButton.addEventListener('click', () => {
     let path = window.location.pathname.replace(/\/+$/, '').replace(/\.html$/, '') || '/';

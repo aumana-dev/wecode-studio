@@ -20,10 +20,10 @@
 /favicon.ico
   Cache-Control: public, max-age=31536000, immutable
 
-/favicon-96x96.png
+/assets/favicons/favicon-96x96.png
   Cache-Control: public, max-age=31536000, immutable
 
-/apple-touch-icon.png
+/assets/favicons/apple-touch-icon.png
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/images/web-app-manifest-192x192.png

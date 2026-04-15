@@ -8,12 +8,17 @@ https://www.wecode.studio/* https://wecodestudio.com/:splat 301
 /servicios.html /servicios 301
 /portafolio.html /portafolio 301
 /contacto.html /contacto 301
-/services.html /services 301
-/portfolio.html /portfolio 301
-/contact.html /contact 301
+/services.html /en/services 301
+/portfolio.html /en/portfolio 301
+/contact.html /en/contact 301
 /privacidad.html /privacidad 301
 /terminos.html /terminos 301
 /gracias.html /gracias 301
+
+# Legacy EN routes (moved under /en/ prefix)
+/services /en/services 301
+/portfolio /en/portfolio 301
+/contact /en/contact 301
 
 # Legacy image paths
 /logo.png /assets/images/logo.png 301
@@ -21,3 +26,5 @@ https://www.wecode.studio/* https://wecodestudio.com/:splat 301
 /logo-light.png /assets/images/logo-light.png 301
 /web-app-manifest-192x192.png /assets/images/web-app-manifest-192x192.png 301
 /web-app-manifest-512x512.png /assets/images/web-app-manifest-512x512.png 301
+/apple-touch-icon.png /assets/favicons/apple-touch-icon.png 301
+/favicon-96x96.png /assets/favicons/favicon-96x96.png 301

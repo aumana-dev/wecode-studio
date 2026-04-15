@@ -23,6 +23,10 @@ weCode-studio/
 ├── assets/
 │   ├── css/
 │   │   └── styles.css             # Estilos globales
+│   ├── favicons/
+│   │   ├── apple-touch-icon.png   # iOS icon
+│   │   ├── favicon-96x96.png      # PNG favicon
+│   │   └── favicon.svg            # SVG favicon
 │   ├── images/
 │   │   ├── logo.png               # Logo principal
 │   │   ├── logo-dark.png          # Logo para OG/Twitter cards
@@ -36,10 +40,11 @@ weCode-studio/
 ├── portafolio/index.html          # ES — Portafolio
 ├── contacto/index.html            # ES — Contacto
 │
-├── en/index.html                  # EN — Home
-├── services/index.html            # EN — Services
-├── portfolio/index.html           # EN — Portfolio
-├── contact/index.html             # EN — Contact
+├── en/                            # English (i18n prefix)
+│   ├── index.html                 # EN — Home
+│   ├── services/index.html        # EN — Services
+│   ├── portfolio/index.html       # EN — Portfolio
+│   └── contact/index.html         # EN — Contact
 │
 ├── privacidad/index.html          # Legal — Privacidad
 ├── terminos/index.html            # Legal — Términos
@@ -47,10 +52,7 @@ weCode-studio/
 │
 ├── index.html                     # ES — Home (página principal)
 ├── 404.html                       # Error page
-├── favicon.ico                    # Favicons
-├── favicon-96x96.png
-├── favicon.svg
-├── apple-touch-icon.png
+├── favicon.ico                    # Browser auto-discovery favicon
 ├── site.webmanifest               # PWA manifest
 ├── robots.txt                     # SEO: crawlers
 ├── sitemap.xml                    # SEO: sitemap
@@ -74,12 +76,12 @@ weCode-studio/
 | Ruta | Descripción |
 |------|------------|
 | `/` | Home ES |
-| `/en` | Home EN |
 | `/servicios` | Servicios ES |
-| `/services` | Services EN |
 | `/portafolio` | Portafolio ES |
-| `/portfolio` | Portfolio EN |
 | `/contacto` | Contacto ES |
-| `/contact` | Contact EN |
+| `/en` | Home EN |
+| `/en/services` | Services EN |
+| `/en/portfolio` | Portfolio EN |
+| `/en/contact` | Contact EN |
 | `/privacidad` | Política de privacidad |
 | `/terminos` | Términos de uso |
