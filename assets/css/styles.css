@@ -549,6 +549,10 @@ section {
   margin-bottom: 1.1rem
 }
 
+.si svg {
+  stroke: url(#icon-grad)
+}
+
 .sc h3 {
   font-family: var(--fh);
   font-size: 1.05rem;

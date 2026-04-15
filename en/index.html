@@ -76,6 +76,14 @@
 </head>
 
 <body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0">
+    <defs>
+      <linearGradient id="icon-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7c3aed" />
+        <stop offset="100%" stop-color="#d946ef" />
+      </linearGradient>
+    </defs>
+  </svg>
 
   <nav>
     <a href="/en" class="logo">
@@ -498,7 +506,8 @@
         </div>
         <div class="cf-group">
           <label for="cf-tel">WhatsApp / Phone</label>
-          <input type="tel" name="tel" id="cf-tel" placeholder="+506 0000-0000" />
+          <input type="tel" name="tel" id="cf-tel" inputmode="tel" pattern="[+0-9\s\-()]*"
+            placeholder="+506 0000-0000" />
         </div>
       </div>
       <div class="cf-group cf-full">

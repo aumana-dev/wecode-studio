@@ -70,3 +70,11 @@ if (contactForm) {
     }
   });
 }
+
+/* Phone field — strip non-numeric characters (allow +, digits, spaces, dashes, parens) */
+const phoneInput = document.getElementById('cf-tel');
+if (phoneInput) {
+  phoneInput.addEventListener('input', () => {
+    phoneInput.value = phoneInput.value.replace(/[^+0-9\s\-()]/g, '');
+  });
+}
