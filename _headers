@@ -8,25 +8,13 @@
   Cross-Origin-Resource-Policy: same-origin
 */
 
-/assets/images/logo-dark.png
-  Cache-Control: public, max-age=31536000, immutable
-
-/assets/images/logo-light.png
-  Cache-Control: public, max-age=31536000, immutable
-
-/assets/images/logo.png
+/assets/images/*
   Cache-Control: public, max-age=31536000, immutable
 
 /favicon.ico
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/favicons/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/assets/images/web-app-manifest-192x192.png
-  Cache-Control: public, max-age=31536000, immutable
-
-/assets/images/web-app-manifest-512x512.png
   Cache-Control: public, max-age=31536000, immutable
 
 /site.webmanifest
