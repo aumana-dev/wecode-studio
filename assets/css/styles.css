@@ -113,7 +113,8 @@ nav {
   transition: color .2s
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--w)
 }
 
@@ -559,6 +560,29 @@ section {
   color: var(--m);
   font-size: .87rem;
   line-height: 1.7
+}
+
+.sf {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem
+}
+
+.sf li {
+  color: var(--m);
+  font-size: .82rem;
+  padding-left: 1.2rem;
+  position: relative
+}
+
+.sf li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--v)
 }
 
 /* PROJECTS */
