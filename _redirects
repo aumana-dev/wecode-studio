@@ -2,3 +2,15 @@
 https://www.wecodestudio.com/* https://wecodestudio.com/:splat 301
 https://wecode.studio/* https://wecodestudio.com/:splat 301
 https://www.wecode.studio/* https://wecodestudio.com/:splat 301
+
+# Legacy .html routes to clean URLs
+/en.html /en 301
+/servicios.html /servicios 301
+/portafolio.html /portafolio 301
+/contacto.html /contacto 301
+/services.html /services 301
+/portfolio.html /portfolio 301
+/contact.html /contact 301
+/privacidad.html /privacidad 301
+/terminos.html /terminos 301
+/gracias.html /gracias 301

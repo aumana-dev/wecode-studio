@@ -4,9 +4,9 @@
 const languageButton = document.getElementById('lb');
 if (languageButton) {
   const langMap = {
-    '/': '/en.html',
-    '/index': '/en.html',
-    '/index.html': '/en.html',
+    '/': '/en',
+    '/index': '/en',
+    '/index.html': '/en',
     '/en': '/',
     '/en.html': '/',
     '/servicios': '/services',
@@ -19,7 +19,7 @@ if (languageButton) {
   languageButton.addEventListener('click', () => {
     let path = window.location.pathname.replace(/\/+$/, '').replace(/\.html$/, '') || '/';
     const isSpanish = document.documentElement.lang === 'es';
-    window.location.href = langMap[path] || (isSpanish ? '/en.html' : '/');
+    window.location.href = langMap[path] || (isSpanish ? '/en' : '/');
   });
 }
 
