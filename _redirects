@@ -2,17 +2,3 @@
 https://www.wecodestudio.com/* https://wecodestudio.com/:splat 301
 https://wecode.studio/* https://wecodestudio.com/:splat 301
 https://www.wecode.studio/* https://wecodestudio.com/:splat 301
-
-# Clean URLs for legal pages
-/privacidad /privacidad.html 200
-/terminos /terminos.html 200
-
-# Clean URLs for section pages (ES)
-/servicios /servicios.html 200
-/portafolio /portafolio.html 200
-/contacto /contacto.html 200
-
-# Clean URLs for section pages (EN)
-/services /services.html 200
-/portfolio /portfolio.html 200
-/contact /contact.html 200
