@@ -5,22 +5,19 @@ const languageButton = document.getElementById('lb');
 if (languageButton) {
   const langMap = {
     '/': '/en.html',
+    '/index': '/en.html',
+    '/index.html': '/en.html',
+    '/en': '/',
     '/en.html': '/',
     '/servicios': '/services',
-    '/servicios.html': '/services',
     '/services': '/servicios',
-    '/services.html': '/servicios',
     '/portafolio': '/portfolio',
-    '/portafolio.html': '/portfolio',
     '/portfolio': '/portafolio',
-    '/portfolio.html': '/portafolio',
     '/contacto': '/contact',
-    '/contacto.html': '/contact',
-    '/contact': '/contacto',
-    '/contact.html': '/contacto'
+    '/contact': '/contacto'
   };
   languageButton.addEventListener('click', () => {
-    const path = window.location.pathname;
+    let path = window.location.pathname.replace(/\/+$/, '').replace(/\.html$/, '') || '/';
     const isSpanish = document.documentElement.lang === 'es';
     window.location.href = langMap[path] || (isSpanish ? '/en.html' : '/');
   });
