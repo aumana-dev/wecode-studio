@@ -3,23 +3,25 @@
 /* Language toggle — navigates between ES and EN versions */
 const languageButton = document.getElementById('lb');
 if (languageButton) {
-  const langMap = {
+  const esMap = {
     '/': '/en',
-    '/index': '/en',
-    '/index.html': '/en',
-    '/en': '/',
-    '/en.html': '/',
     '/servicios': '/en/services',
-    '/en/services': '/servicios',
     '/portafolio': '/en/portfolio',
-    '/en/portfolio': '/portafolio',
     '/contacto': '/en/contact',
+    '/privacidad': '/en',
+    '/terminos': '/en'
+  };
+  const enMap = {
+    '/en': '/',
+    '/en/services': '/servicios',
+    '/en/portfolio': '/portafolio',
     '/en/contact': '/contacto'
   };
   languageButton.addEventListener('click', () => {
-    let path = window.location.pathname.replace(/\/+$/, '').replace(/\.html$/, '') || '/';
+    const path = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/+$/, '') || '/';
     const isSpanish = document.documentElement.lang === 'es';
-    window.location.href = langMap[path] || (isSpanish ? '/en' : '/');
+    const map = isSpanish ? esMap : enMap;
+    window.location.href = map[path] || (isSpanish ? '/en' : '/');
   });
 }
 
