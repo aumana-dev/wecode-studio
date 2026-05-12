@@ -11,6 +11,8 @@ https://www.wecode.studio/* https://wecodestudio.com/:splat 301
 /services.html /en/services 301
 /portfolio.html /en/portfolio 301
 /contact.html /en/contact 301
+/privacy.html /en/privacy 301
+/terms.html /en/terms 301
 /privacidad.html /privacidad 301
 /terminos.html /terminos 301
 /gracias.html /gracias 301
@@ -19,6 +21,8 @@ https://www.wecode.studio/* https://wecodestudio.com/:splat 301
 /services /en/services 301
 /portfolio /en/portfolio 301
 /contact /en/contact 301
+/privacy /en/privacy 301
+/terms /en/terms 301
 
 # Legacy image paths
 /logo.png /assets/images/logo.png 301

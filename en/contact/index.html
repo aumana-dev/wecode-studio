@@ -64,7 +64,7 @@
     </ul>
     <div class="nav-r">
       <button class="lang" id="lb">ES</button>
-      <a href="#cta" class="btn-cta">Let's Talk →</a>
+      <a href="#cta" class="btn-cta" data-track="nav_talk">Let's Talk →</a>
     </div>
   </nav>
 
@@ -102,6 +102,46 @@
           <input type="tel" name="tel" id="cf-tel" inputmode="tel" pattern="[+0-9\s\-()]*"
             placeholder="+506 0000-0000" />
         </div>
+        <div class="cf-group">
+          <label for="cf-company">Company type *</label>
+          <select name="company" id="cf-company" required>
+            <option value="">Select...</option>
+            <option value="startup">Startup</option>
+            <option value="smb">Established SMB</option>
+            <option value="enterprise">Mid-size / Enterprise</option>
+            <option value="agency">Agency / Partner</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-budget">Estimated budget *</label>
+          <select name="budget" id="cf-budget" required>
+            <option value="">Select...</option>
+            <option value="lt-2500">Under $2,500</option>
+            <option value="2500-7000">$2,500 - $7,000</option>
+            <option value="7000-15000">$7,000 - $15,000</option>
+            <option value="15000-plus">Over $15,000</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-timeline">Desired timeline *</label>
+          <select name="timeline" id="cf-timeline" required>
+            <option value="">Select...</option>
+            <option value="asap">As soon as possible</option>
+            <option value="30-days">Within 30 days</option>
+            <option value="60-90-days">Within 60-90 days</option>
+            <option value="exploring">Just exploring options</option>
+          </select>
+        </div>
+      </div>
+      <div class="cf-group cf-full">
+        <label for="cf-goal">Main goal *</label>
+        <select name="goal" id="cf-goal" required>
+          <option value="">Select...</option>
+          <option value="more-sales">Increase sales</option>
+          <option value="save-time">Automate and save time</option>
+          <option value="reduce-errors">Reduce operational errors</option>
+          <option value="digital-presence">Improve digital presence</option>
+        </select>
       </div>
       <div class="cf-group cf-full">
         <label for="cf-mensaje">Tell us about your project *</label>
@@ -110,8 +150,9 @@
       <button type="submit" class="btn-p cf-submit">Send message →</button>
     </form>
     <div class="ctawrap">
-      <a href="mailto:info@wecodestudio.com" class="btn-p rv">info@wecodestudio.com</a>
-      <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+      <a href="mailto:info@wecodestudio.com" class="btn-p rv" data-track="cta_email">info@wecodestudio.com</a>
+      <a href="https://wa.me/50661042840" class="btn-g rv" data-track="cta_whatsapp" target="_blank"
+        rel="noopener noreferrer">WhatsApp →</a>
     </div>
   </section>
 
@@ -123,12 +164,12 @@
       <a href="https://www.instagram.com/wecode.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="https://www.facebook.com/profile.php?id=100092511412533" target="_blank"
         rel="noopener noreferrer">Facebook</a>
-      <a href="/privacidad">Privacy</a>
-      <a href="/terminos">Terms</a>
+      <a href="/en/privacy">Privacy</a>
+      <a href="/en/terms">Terms</a>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js?v=2"></script>
+  <script src="/assets/js/main.js?v=3"></script>
 </body>
 
 </html>

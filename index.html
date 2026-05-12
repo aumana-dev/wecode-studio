@@ -127,7 +127,7 @@
     </ul>
     <div class="nav-r">
       <button class="lang" id="lb">EN</button>
-      <a href="/contacto" class="btn-cta">Hablemos →</a>
+      <a href="/contacto" class="btn-cta" data-track="nav_talk">Hablemos →</a>
     </div>
   </nav>
 
@@ -135,13 +135,14 @@
     <div class="orb o1"></div>
     <div class="orb o2"></div>
     <div class="orb o3"></div>
-    <div class="badge"><span class="dot"></span><span>Innovación Tecnológica a tu Alcance</span></div>
-    <h1><span>Transformamos ideas en</span><br><span class="grad">software real</span></h1>
-    <p class="hero-sub">Diseñamos y desarrollamos plataformas digitales que hacen crecer tu negocio — desde sitios web
-      hasta CRMs empresariales completamente a medida.</p>
+    <div class="badge"><span class="dot"></span><span>Especialistas en CRM Comercial & Operaciones</span></div>
+    <h1><span>Convertimos procesos lentos en</span><br><span class="grad">sistemas que venden</span></h1>
+    <p class="hero-sub">Diseñamos software a medida para pymes y equipos comerciales que necesitan vender mejor,
+      responder
+      más rápido y operar con menos fricción.</p>
     <div class="ctas">
-      <a href="#cta" class="btn-p">Empezar mi proyecto</a>
-      <a href="#projects" class="btn-g">Ver portafolio</a>
+      <a href="#cta" class="btn-p" data-track="hero_start_project">Empezar mi proyecto</a>
+      <a href="#projects" class="btn-g" data-track="hero_view_portfolio">Ver portafolio</a>
     </div>
     <div class="stats">
       <div>
@@ -539,6 +540,46 @@
           <input type="tel" name="tel" id="cf-tel" inputmode="tel" pattern="[+0-9\s\-()]*"
             placeholder="+506 0000-0000" />
         </div>
+        <div class="cf-group">
+          <label for="cf-empresa">Tipo de empresa *</label>
+          <select name="empresa" id="cf-empresa" required>
+            <option value="">Seleccionar...</option>
+            <option value="startup">Startup</option>
+            <option value="pyme">PyME consolidada</option>
+            <option value="enterprise">Empresa mediana/grande</option>
+            <option value="agency">Agencia / partner</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-presupuesto">Presupuesto estimado *</label>
+          <select name="presupuesto" id="cf-presupuesto" required>
+            <option value="">Seleccionar...</option>
+            <option value="lt-2500">Menos de $2,500</option>
+            <option value="2500-7000">$2,500 - $7,000</option>
+            <option value="7000-15000">$7,000 - $15,000</option>
+            <option value="15000-plus">Más de $15,000</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-plazo">Plazo deseado *</label>
+          <select name="plazo" id="cf-plazo" required>
+            <option value="">Seleccionar...</option>
+            <option value="asap">Lo antes posible</option>
+            <option value="30-days">En 30 días</option>
+            <option value="60-90-days">En 60-90 días</option>
+            <option value="exploring">Estoy explorando opciones</option>
+          </select>
+        </div>
+      </div>
+      <div class="cf-group cf-full">
+        <label for="cf-objetivo">Objetivo principal *</label>
+        <select name="objetivo" id="cf-objetivo" required>
+          <option value="">Seleccionar...</option>
+          <option value="more-sales">Aumentar ventas</option>
+          <option value="save-time">Automatizar y ahorrar tiempo</option>
+          <option value="reduce-errors">Reducir errores operativos</option>
+          <option value="digital-presence">Mejorar presencia digital</option>
+        </select>
       </div>
       <div class="cf-group cf-full">
         <label for="cf-mensaje">Contanos tu proyecto *</label>
@@ -547,8 +588,9 @@
       <button type="submit" class="btn-p cf-submit">Enviar mensaje →</button>
     </form>
     <div class="ctawrap">
-      <a href="mailto:info@wecodestudio.com" class="btn-p rv">Escribinos ahora</a>
-      <a href="https://wa.me/50661042840" class="btn-g rv" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+      <a href="mailto:info@wecodestudio.com" class="btn-p rv" data-track="cta_email">Escribinos ahora</a>
+      <a href="https://wa.me/50661042840" class="btn-g rv" data-track="cta_whatsapp" target="_blank"
+        rel="noopener noreferrer">WhatsApp →</a>
     </div>
   </section>
 
@@ -565,7 +607,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js?v=2"></script>
+  <script src="/assets/js/main.js?v=3"></script>
 </body>
 
 </html>
