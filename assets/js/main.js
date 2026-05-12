@@ -21,6 +21,64 @@ function trackEvent(name, props = {}) {
 
 loadAnalytics();
 
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src="${src}"]`)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = src;
+    script.defer = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Failed loading ${src}`));
+    document.head.appendChild(script);
+  });
+}
+
+function initAdvancedMotion() {
+  if (typeof window.ScrollReveal === 'function') {
+    const sr = window.ScrollReveal({
+      distance: '24px',
+      duration: 850,
+      easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+      reset: false,
+      mobile: true,
+      viewFactor: 0.15
+    });
+    sr.reveal('.rv', { interval: 70 });
+    sr.reveal('.pc, .sc, .tc, .step', { interval: 90 });
+  }
+
+  if (typeof window.anime === 'function') {
+    window.anime({
+      targets: '.orb',
+      translateY: ['-10px', '12px'],
+      direction: 'alternate',
+      easing: 'easeInOutSine',
+      duration: 5000,
+      loop: true,
+      delay: window.anime.stagger(600)
+    });
+
+    window.anime({
+      targets: '.btn-p',
+      scale: [1, 1.02, 1],
+      duration: 2400,
+      easing: 'easeInOutSine',
+      loop: true,
+      delay: 1200
+    });
+  }
+}
+
+Promise.allSettled([
+  loadScript('https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js'),
+  loadScript('https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js')
+]).finally(() => {
+  initAdvancedMotion();
+});
+
 /* Language toggle — navigates between ES and EN versions */
 const languageButton = document.getElementById('lb');
 if (languageButton) {

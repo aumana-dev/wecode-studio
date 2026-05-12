@@ -7,19 +7,19 @@
 }
 
 :root {
-  --bg: #07060e;
-  --bg2: #0c0b18;
-  --surface: #111023;
-  --border: #1a1730;
+  --bg: #121426;
+  --bg2: #181c33;
+  --surface: #20253f;
+  --border: #2a3153;
   --p: #7c3aed;
   --pl: #9d5ff0;
   --v: #a855f7;
   --ac: #d946ef;
   --y: #facc15;
-  --w: #f0eeff;
-  --m: #8b89a8;
-  --card: #0d0c1e;
-  --fh: 'Syne', sans-serif;
+  --w: #f6f7ff;
+  --m: #b6bdd8;
+  --card: #1e2340;
+  --fh: 'DM Sans', sans-serif;
   --fb: 'DM Sans', sans-serif;
   --r: 14px;
 }
@@ -29,7 +29,10 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 520px at 14% -8%, rgba(157, 95, 240, .16), transparent 62%),
+    radial-gradient(980px 480px at 85% 0%, rgba(124, 58, 237, .14), transparent 60%),
+    var(--bg);
   color: var(--w);
   font-family: var(--fb);
   font-size: 16px;
@@ -57,7 +60,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5vw;
-  background: rgba(7, 6, 14, .82);
+  background: rgba(18, 20, 38, .86);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border)
 }
@@ -252,7 +255,7 @@ h1 {
   font-weight: 800;
   font-size: clamp(2.1rem, 5.5vw, 5.2rem);
   line-height: 1.04;
-  letter-spacing: -2px;
+  letter-spacing: -.7px;
   margin-bottom: 1.4rem;
   animation: fu .7s ease .1s both
 }
@@ -473,7 +476,7 @@ section {
   font-size: clamp(1.9rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: -.35px;
   margin-bottom: .9rem
 }
 
@@ -744,6 +747,10 @@ section {
   background: linear-gradient(135deg, #1a1000, #3d2600)
 }
 
+.pt-findcoach {
+  background: linear-gradient(135deg, #111827, #2563eb)
+}
+
 .pe {
   font-size: 3.2rem;
   line-height: 1;
@@ -755,7 +762,7 @@ section {
   font-family: var(--fh);
   font-size: .68rem;
   font-weight: 700;
-  letter-spacing: .14em;
+  letter-spacing: .06em;
   text-transform: uppercase;
   opacity: .65;
   position: relative;
