@@ -69,6 +69,34 @@ function initAdvancedMotion() {
       loop: true,
       delay: 1200
     });
+
+    window.anime({
+      targets: '.pc',
+      translateY: ['0px', '-5px', '0px'],
+      duration: 4200,
+      easing: 'easeInOutSine',
+      loop: true,
+      delay: window.anime.stagger(180)
+    });
+  }
+
+  const hero = document.getElementById('hero');
+  const orbs = document.querySelectorAll('.orb');
+  if (hero && orbs.length) {
+    hero.addEventListener('mousemove', (event) => {
+      const rect = hero.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 14;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 14;
+      orbs.forEach((orb, index) => {
+        const depth = (index + 1) * 0.45;
+        orb.style.transform = `translate(${x * depth}px, ${y * depth}px)`;
+      });
+    });
+    hero.addEventListener('mouseleave', () => {
+      orbs.forEach((orb) => {
+        orb.style.transform = 'translate(0, 0)';
+      });
+    });
   }
 }
 

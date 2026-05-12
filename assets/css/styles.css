@@ -7,18 +7,18 @@
 }
 
 :root {
-  --bg: #121426;
-  --bg2: #181c33;
-  --surface: #20253f;
-  --border: #2a3153;
+  --bg: #1a1f38;
+  --bg2: #232a4a;
+  --surface: #2a3359;
+  --border: #3a4672;
   --p: #7c3aed;
   --pl: #9d5ff0;
   --v: #a855f7;
   --ac: #d946ef;
   --y: #facc15;
-  --w: #f6f7ff;
-  --m: #b6bdd8;
-  --card: #1e2340;
+  --w: #f8f9ff;
+  --m: #d0d6ea;
+  --card: #293157;
   --fh: 'DM Sans', sans-serif;
   --fb: 'DM Sans', sans-serif;
   --r: 14px;
@@ -38,6 +38,15 @@ body {
   font-size: 16px;
   line-height: 1.65;
   overflow-x: hidden
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: -1
 }
 
 body::after {
@@ -98,7 +107,7 @@ nav {
   font-weight: 700;
   font-size: .68rem;
   color: var(--v);
-  letter-spacing: .08em;
+  letter-spacing: .04em;
   text-transform: uppercase
 }
 
@@ -252,10 +261,12 @@ nav {
 
 h1 {
   font-family: var(--fh);
-  font-weight: 800;
-  font-size: clamp(2.1rem, 5.5vw, 5.2rem);
-  line-height: 1.04;
-  letter-spacing: -.7px;
+  font-weight: 700;
+  font-size: clamp(1.95rem, 4.8vw, 4.4rem);
+  line-height: 1.1;
+  letter-spacing: -.2px;
+  text-wrap: balance;
+  max-width: 12.5ch;
   margin-bottom: 1.4rem;
   animation: fu .7s ease .1s both
 }
@@ -272,7 +283,7 @@ h1 {
   color: var(--m);
   max-width: 560px;
   margin: 0 auto 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
   animation: fu .7s ease .2s both
 }
 
@@ -368,7 +379,7 @@ h1 {
   text-align: center;
   font-size: .75rem;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   color: var(--m);
   margin-bottom: 2rem
 }
@@ -483,7 +494,7 @@ section {
 .stag {
   font-size: .75rem;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   color: var(--v);
   font-weight: 700;
   margin-bottom: .9rem
@@ -762,7 +773,7 @@ section {
   font-family: var(--fh);
   font-size: .68rem;
   font-weight: 700;
-  letter-spacing: .06em;
+  letter-spacing: .03em;
   text-transform: uppercase;
   opacity: .65;
   position: relative;
