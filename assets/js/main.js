@@ -75,7 +75,7 @@ function initAdvancedMotion() {
     });
 
     window.anime({
-      targets: '.btn-p',
+      targets: '.btn-p, .btn-g',
       scale: [1, 1.02, 1],
       duration: 2400,
       easing: 'easeInOutSine',

@@ -328,6 +328,11 @@ h1 {
 }
 
 .btn-p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  line-height: 1.1;
   background: linear-gradient(135deg, var(--p), var(--ac));
   color: #f8fbff;
   text-decoration: none;
@@ -345,6 +350,11 @@ h1 {
 }
 
 .btn-g {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  line-height: 1.1;
   background: rgba(9, 28, 43, 0.75);
   color: var(--w);
   text-decoration: none;
