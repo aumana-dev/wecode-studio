@@ -443,6 +443,19 @@ h1 {
 }
 
 /* CLIENTS */
+
+.ctawrap .btn-p.rv,
+.ctawrap .btn-g.rv {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.ctawrap .btn-p.rv:hover,
+.ctawrap .btn-g.rv:hover {
+  transform: translateY(-2px) !important;
+}
+
 #clients {
   padding: 2.9rem 0;
   border-top: 1px solid rgba(192, 132, 252, 0.2);
