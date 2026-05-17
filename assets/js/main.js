@@ -37,6 +37,10 @@ function loadScript(src) {
 }
 
 function initAdvancedMotion() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
   if (typeof window.ScrollReveal === 'function') {
     const sr = window.ScrollReveal({
       distance: '24px',
@@ -51,6 +55,15 @@ function initAdvancedMotion() {
   }
 
   if (typeof window.anime === 'function') {
+    window.anime({
+      targets: 'h1, .sh',
+      opacity: [0, 1],
+      translateY: [18, 0],
+      duration: 900,
+      easing: 'easeOutCubic',
+      delay: window.anime.stagger(70)
+    });
+
     window.anime({
       targets: '.orb',
       translateY: ['-10px', '12px'],
@@ -79,6 +92,20 @@ function initAdvancedMotion() {
       delay: window.anime.stagger(180)
     });
   }
+
+  document.querySelectorAll('.btn-p, .btn-g, .btn-cta').forEach((button) => {
+    button.addEventListener('mousemove', (event) => {
+      const rect = button.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const rx = ((y / rect.height) - 0.5) * -5;
+      const ry = ((x / rect.width) - 0.5) * 5;
+      button.style.transform = `perspective(480px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    });
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = '';
+    });
+  });
 
   const hero = document.getElementById('hero');
   const orbs = document.querySelectorAll('.orb');
