@@ -171,6 +171,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll('.rv').forEach((el) => revealObserver.observe(el));
+document.querySelectorAll('.ref-tier').forEach((el) => revealObserver.observe(el));
 
 /* Generic click tracking for core conversion actions */
 document.querySelectorAll('a, button').forEach((el) => {
