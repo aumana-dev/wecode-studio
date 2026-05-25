@@ -374,7 +374,7 @@ h1 {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 0.7rem;
   width: min(920px, 100%);
   margin-top: 3.3rem;
@@ -470,7 +470,14 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.11em;
   color: var(--m);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cl-note {
+  text-align: center;
+  color: var(--m);
+  font-size: 0.8rem;
+  margin-bottom: 1.8rem;
 }
 
 .track-wrap {
