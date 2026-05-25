@@ -480,6 +480,61 @@ h1 {
   margin-bottom: 1.8rem;
 }
 
+/* REFERRAL */
+#referidos {
+  background: rgba(10, 27, 42, 0.62);
+  border-top: 1px solid rgba(192, 132, 252, 0.2);
+  border-bottom: 1px solid rgba(192, 132, 252, 0.2);
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0 2.5rem;
+}
+
+.ref-step {
+  background: linear-gradient(170deg, rgba(23, 48, 71, 0.84), rgba(14, 32, 48, 0.88));
+  border: 1px solid rgba(192, 132, 252, 0.24);
+  border-radius: var(--r);
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+}
+
+.ref-num {
+  font-family: var(--fh);
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #a78bfa, #67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.ref-step h4 {
+  font-family: var(--fh);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.ref-step p {
+  color: var(--m);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.ref-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
 .track-wrap {
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
@@ -1103,12 +1158,12 @@ section {
 #cta h2,
 #cta h1 {
   font-family: var(--fh);
-  font-size: clamp(2rem, 5vw, 3.7rem);
+  font-size: clamp(1.45rem, 2.8vw, 2.1rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.06;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
   margin-bottom: 1rem;
-  max-width: 14ch;
+  max-width: 22ch;
   margin-left: auto;
   margin-right: auto;
   position: relative;

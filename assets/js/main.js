@@ -263,3 +263,33 @@ if (phoneInput) {
     phoneInput.value = phoneInput.value.replace(/[^+0-9\s\-()]/g, '');
   });
 }
+
+/* Hero scroll parallax — content drifts up and fades as user scrolls out of hero */
+(function initHeroParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const hero = document.getElementById('hero');
+  if (!hero) return;
+  const items = hero.querySelectorAll('.badge, h1, .hero-sub, .ctas, .stats');
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      const limit = hero.offsetHeight;
+      if (y > limit) {
+        items.forEach((el) => { el.style.transform = ''; el.style.opacity = ''; });
+        ticking = false;
+        return;
+      }
+      const pct = y / limit;
+      items.forEach((el) => {
+        el.style.transition = 'none';
+        el.style.transform = `translateY(${y * 0.18}px)`;
+        el.style.opacity = String(Math.max(0, 1 - pct * 1.6));
+      });
+      ticking = false;
+    });
+  }, { passive: true });
+}());
