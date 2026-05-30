@@ -712,8 +712,12 @@ h1 {
   background: linear-gradient(135deg, #d6508f, #ab2f6a);
 }
 
-.ci-gymflow {
+.ci-trainme {
   background: linear-gradient(135deg, #2088d7, #1264b3);
+}
+
+.ci-findcoach {
+  background: linear-gradient(135deg, #22324c, #2f568e);
 }
 
 .ci-peoplehub {
@@ -1020,7 +1024,7 @@ section {
   background: linear-gradient(135deg, #1a2b4d, #244981);
 }
 
-.pt-gymflow {
+.pt-trainme {
   background: linear-gradient(135deg, #0f314f, #246ea0);
 }
 
