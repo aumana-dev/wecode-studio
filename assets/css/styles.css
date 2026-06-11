@@ -32,7 +32,7 @@ html {
 body {
   background:
     radial-gradient(1100px 600px at 10% -12%, rgba(124, 58, 237, 0.24), transparent 62%),
-    radial-gradient(960px 520px at 92% 2%, rgba(34, 211, 238, 0.16), transparent 58%),
+    radial-gradient(960px 520px at 92% 2%, rgba(28, 91, 110, 0.2), transparent 58%),
     linear-gradient(180deg, #05101a 0%, var(--bg) 45%, #060f17 100%);
   color: var(--w);
   font-family: var(--fb);
@@ -46,8 +46,8 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.03), transparent 45%),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.012) 0 1px, transparent 1px 72px);
+    linear-gradient(115deg, rgba(22, 36, 49, 0.28), transparent 48%),
+    repeating-linear-gradient(90deg, rgba(48, 70, 94, 0.16) 0 1px, transparent 1px 72px);
   pointer-events: none;
   z-index: -1;
 }
@@ -239,7 +239,7 @@ nav {
 .o2 {
   width: 430px;
   height: 430px;
-  background: rgba(34, 211, 238, 0.2);
+  background: rgba(28, 91, 110, 0.26);
   top: 70px;
   right: -130px;
   animation: fl 8s ease-in-out infinite reverse;
@@ -304,7 +304,7 @@ h1 {
 }
 
 .grad {
-  background: linear-gradient(110deg, #8b5cf6 0%, #c084fc 48%, #67e8f9 100%);
+  background: linear-gradient(110deg, #8b5cf6 0%, #c084fc 48%, #2f748a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
